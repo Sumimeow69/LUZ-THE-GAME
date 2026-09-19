@@ -7,6 +7,8 @@ public class cuadroscript : MonoBehaviour
 
     [SerializeField] private GameObject aviso;
 
+    [SerializeField] private GameObject eventoCuadro;
+
     public bool IsInside = false;
 
     private void Awake()
@@ -19,6 +21,8 @@ public class cuadroscript : MonoBehaviour
         {
             aviso.SetActive(false);
         }
+
+        eventoCuadro.SetActive(false);
     }
 
     public void EntrarAlCuadro()
@@ -26,6 +30,8 @@ public class cuadroscript : MonoBehaviour
         IsInside = true;
         cuadroPurificado.SetActive(true);
         aviso.SetActive(false);
+        eventoCuadro.SetActive(true);
+
     }
 
     public void SalirDelCuadro()
@@ -33,6 +39,7 @@ public class cuadroscript : MonoBehaviour
         IsInside = false;
         cuadroPurificado.SetActive(false);
         aviso.SetActive(true);
+        eventoCuadro.SetActive(false);
     }
 
     public void MostrarAviso()
