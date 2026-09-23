@@ -3,7 +3,7 @@ using UnityEngine;
 public class cuadroscript : MonoBehaviour
 {
 
-    [SerializeField] private GameObject cuadroPurificado;
+    [SerializeField] private Transform puntoSalida;
 
     [SerializeField] private GameObject aviso;
 
@@ -13,22 +13,21 @@ public class cuadroscript : MonoBehaviour
 
     private void Awake()
     {
-
-        cuadroPurificado.SetActive(false);
-
         
         if (aviso != null)
         {
             aviso.SetActive(false);
         }
 
-        eventoCuadro.SetActive(false);
+        if (eventoCuadro != null)
+        {
+            eventoCuadro.SetActive(false);
+        }
     }
 
     public void EntrarAlCuadro()
     {
         IsInside = true;
-        cuadroPurificado.SetActive(true);
         aviso.SetActive(false);
         eventoCuadro.SetActive(true);
 
@@ -37,10 +36,38 @@ public class cuadroscript : MonoBehaviour
     public void SalirDelCuadro()
     {
         IsInside = false;
-        cuadroPurificado.SetActive(false);
         aviso.SetActive(true);
         eventoCuadro.SetActive(false);
     }
+    public Transform GetPuntoSalida()
+    {
+        return puntoSalida;
+    }
+
+    public void ActivarEvento()
+    {
+        IsInside = true;
+
+        if (aviso != null)
+        {
+            aviso.SetActive(false);
+        }
+
+        if (eventoCuadro != null)
+        {
+            eventoCuadro.SetActive(true);
+        }
+    }
+
+    public void DesactivarEvento()
+    {
+        IsInside = false;
+        if (eventoCuadro != null)
+        {
+            eventoCuadro.SetActive(false);
+        }
+    }
+
 
     public void MostrarAviso()
     {
@@ -58,4 +85,5 @@ public class cuadroscript : MonoBehaviour
         }
 
     }
+
 }

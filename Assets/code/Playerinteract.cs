@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+
 public class Playerinteract : MonoBehaviour
 {
-
     [SerializeField] private TMP_Text textoAjolotes;
     [SerializeField] private int ajolotesTotales = 4;
 
@@ -14,6 +14,8 @@ public class Playerinteract : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private movementpj movimiento;
     private Collider2D playerCollider;
+
+    private bool teletransportando = false;
 
     private void Awake()
     {
@@ -39,38 +41,83 @@ public class Playerinteract : MonoBehaviour
     {
         if (!cuadroActual.IsInside)
         {
-            //Entra al cuadro
             cuadroActual.EntrarAlCuadro();
 
-            //Oculta el sprite de jesus
             spriteRenderer.enabled = false;
-
-            //Detener movimiento
             movimiento.enabled = false;
         }
         else
         {
-            //Salir cuadro
             cuadroActual.SalirDelCuadro();
 
-            //Activar sprite de jesus
             spriteRenderer.enabled = true;
-
-            //Activar movimiento
             movimiento.enabled = true;
         }
+    }
+
+    public void TeletransportarACuadro(cuadroscript destino)
+    {
+        if (destino == null || teletransportando)
+        {
+            return;
+        }
+
+        teletransportando = true;
+
+        // Desactivar el evento del cuadro actual
+        if (cuadroActual != null)
+        {
+            cuadroActual.DesactivarEvento();
+            cuadroActual.OcultarAviso();
+        }
+
+        // Obtener punto de salida
+        Transform puntoSalida = destino.GetPuntoSalida();
+
+        if (puntoSalida == null)
+        {
+            teletransportando = false;
+            return;
+        }
+
+        // Mover jugador
+        transform.position = puntoSalida.position;
+
+        // Nuevo cuadroActual
+        cuadroActual = destino;
+
+        // Entrar automáticamente al nuevo cuadro
+        destino.IsInside = true;
+
+        // Activar evento del destino
+        destino.ActivarEvento();
+
+        // Mantener jugador oculto y quieto
+        spriteRenderer.enabled = false;
+        movimiento.enabled = false;
+
+        teletransportando = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Cuadro"))
         {
+            cuadroscript cuadro = other.GetComponent<cuadroscript>();
 
-            cuadroActual = other.GetComponent<cuadroscript>();
-
-            if (cuadroActual != null)
+            if (cuadro != null)
             {
-                cuadroActual.MostrarAviso();
+                // Si esta haciendo un TP, no modificara cuadroActual
+                if (!teletransportando)
+                {
+                    cuadroActual = cuadro;
+                }
+
+                // Mostrar el aviso solamente si no esta dentro
+                if (cuadro != cuadroActual || !cuadro.IsInside)
+                {
+                    cuadro.MostrarAviso();
+                }
             }
         }
 
@@ -88,11 +135,21 @@ public class Playerinteract : MonoBehaviour
     {
         if (other.CompareTag("Cuadro"))
         {
-            if (cuadroActual != null)
+            cuadroscript cuadro = other.GetComponent<cuadroscript>();
+
+            if (cuadro != null)
             {
-                cuadroActual.OcultarAviso();
+
+                if (cuadro == cuadroActual && !teletransportando)
+                {
+                    cuadroActual.OcultarAviso();
+                    cuadroActual = null;
+                }
+                else
+                {
+                    cuadro.OcultarAviso();
+                }
             }
-            cuadroActual = null;
         }
     }
 
