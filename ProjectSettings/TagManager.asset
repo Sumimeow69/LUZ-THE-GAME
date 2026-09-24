@@ -7,6 +7,7 @@ TagManager:
   - Cuadro
   - Aviso
   - Ajolote
+  - Almacen
   layers:
   - Default
   - TransparentFX
@@ -43,6 +44,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BACK
+    uniqueID: 1831924677
     locked: 0
   - name: Cuadro puro
     uniqueID: 1038605251

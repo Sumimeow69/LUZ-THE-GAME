@@ -37,7 +37,7 @@ public class MovEnemigo : MonoBehaviour
                 return;
             }
 
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
     }
 }
