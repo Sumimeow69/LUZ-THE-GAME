@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using System.Collections;
 using System.Collections.Generic;
 
 
@@ -29,6 +30,10 @@ public class Playerinteract : MonoBehaviour
     private movementpj movimiento;
     private Collider2D playerCollider;
 
+
+    [SerializeField] private SpriteRenderer spriteCofre;
+    private Coroutine efectoCofre;
+
     private bool teletransportando = false;
 
     private void Awake()
@@ -36,7 +41,7 @@ public class Playerinteract : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         movimiento = GetComponent<movementpj>();
         playerCollider = GetComponent<Collider2D>();
-        textoAjolotes.text = "Almacenados: 0/" + ajolotesTotales;
+        textoAjolotes.text = "Recolectados: 0/" + ajolotesTotales;
     }
 
     private void Update()
@@ -75,7 +80,19 @@ public class Playerinteract : MonoBehaviour
 
         ajolotesRecolectadosObjetos.Clear();
 
-        textoAjolotes.text = "Almacenados: 0/" + (ajolotesTotales - ajolotesAlmacenados);
+        textoAjolotes.text = "Recolectados: 0/" + (ajolotesTotales - ajolotesAlmacenados);
+
+
+        // Activar efecto visual del cofre
+        if (spriteCofre != null)
+        {
+            if (efectoCofre != null)
+            {
+                StopCoroutine(efectoCofre);
+            }
+
+            efectoCofre = StartCoroutine(EfectoCofre());
+        }
 
         if (ajolotesAlmacenados >= ajolotesTotales)
         {
@@ -184,10 +201,21 @@ public class Playerinteract : MonoBehaviour
 
             ajolotesRecolectadosObjetos.Add(other.gameObject);
 
-            textoAjolotes.text = "Almacenados: " + ajolotesRecolectados + "/" + (ajolotesTotales - ajolotesAlmacenados);
+            textoAjolotes.text = "Recolectados: " + ajolotesRecolectados + "/" + (ajolotesTotales - ajolotesAlmacenados);
 
             other.gameObject.SetActive(false);
         }
+    }
+
+    private IEnumerator EfectoCofre()
+    {
+        spriteCofre.color = Color.green;
+
+        yield return new WaitForSeconds(0.15f);
+
+        spriteCofre.color = Color.white;
+
+        efectoCofre = null;
     }
     private void PerderAjolotes()
     {
@@ -200,7 +228,7 @@ public class Playerinteract : MonoBehaviour
 
         ajolotesRecolectados = 0;
 
-        textoAjolotes.text = "Almacenados: 0/" + (ajolotesTotales - ajolotesAlmacenados);
+        textoAjolotes.text = "Recolectados: 0/" + (ajolotesTotales - ajolotesAlmacenados);
     }
     private void OnTriggerExit2D(Collider2D other)
     {

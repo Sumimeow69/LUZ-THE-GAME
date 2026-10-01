@@ -3027,7 +3027,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Almacenados: 0/4'
+  m_text: 'Recolectados: 0/4'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4872,6 +4872,7 @@ MonoBehaviour:
   escenaSiguiente: 1
   textoAjolotes: {fileID: 631202175}
   ajolotesTotales: 4
+  spriteCofre: {fileID: 2070588943}
 --- !u!1 &1169610600
 GameObject:
   m_ObjectHideFlags: 0
@@ -9083,7 +9084,7 @@ GameObject:
   - component: {fileID: 2070588944}
   - component: {fileID: 2070588945}
   m_Layer: 0
-  m_Name: Square
+  m_Name: SPRITE COFRE A GREEN
   m_TagString: Almacen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
