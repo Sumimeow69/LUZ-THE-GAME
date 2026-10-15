@@ -29,8 +29,8 @@ public class IAZone : MonoBehaviour
     private float timerPerdidaVista = 0f;
 
     [Header("Velocidades")]
-    public float velocidadPatrulla = 10f;
-    public float velocidadPersecucion = 10f;
+    public float velocidadPatrulla = 5f;
+    public float velocidadPersecucion = 6f;
 
     private NavMeshAgent agent;
     private EstadoIA estadoActual = EstadoIA.Patrullando;
@@ -38,10 +38,6 @@ public class IAZone : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
-
         agent.speed = velocidadPatrulla;
         IrAlSiguientePunto();
     }
