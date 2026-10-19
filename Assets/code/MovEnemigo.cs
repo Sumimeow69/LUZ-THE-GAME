@@ -8,22 +8,22 @@ public class MovEnemigo : MonoBehaviour
 
     private int puntoActual = 0;
 
-    private void Update()
-    {
-        Transform destino = puntos[puntoActual];
+    //private void Update()
+    //{
+    //    Transform destino = puntos[puntoActual];
 
-        transform.position = Vector2.MoveTowards(transform.position,destino.position,speed * Time.deltaTime); //seguramente para hacer un mov variado tenga algo que ver con estas funciones similares como el Lerp o PingPong !!!
+    //    transform.position = Vector2.MoveTowards(transform.position,destino.position,speed * Time.deltaTime); //seguramente para hacer un mov variado tenga algo que ver con estas funciones similares como el Lerp o PingPong !!!
 
-        if (Vector2.Distance(transform.position, destino.position) < 0.01f)
-        {
-            puntoActual++;
+    //    if (Vector2.Distance(transform.position, destino.position) < 0.01f)
+    //    {
+    //        puntoActual++;
 
-            if (puntoActual >= puntos.Length)
-            {
-                puntoActual = 0;
-            }
-        }
-    }
+    //        if (puntoActual >= puntos.Length)
+    //        {
+    //            puntoActual = 0;
+    //        }
+    //    }
+    //}
 
 
     private void OnTriggerEnter2D(Collider2D other)

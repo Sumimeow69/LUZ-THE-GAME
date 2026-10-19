@@ -60,10 +60,21 @@ public class IAZone : MonoBehaviour
 
     void DeteccionJugador()
     {
+        if (JugadorEstaOculto(transformJugador))
+        {
+            if (estadoActual == EstadoIA.Persiguiendo)
+            {
+                OlvidarJugador();
+            }
+            return;
+        }
+
         Collider2D jugadorDetectado = Physics2D.OverlapCircle(transform.position, radioDeteccion, capaJugador);
 
         if (jugadorDetectado != null)
         {
+            if (JugadorEstaOculto(jugadorDetectado.transform)) return;
+
             if (transformJugador == null) transformJugador = jugadorDetectado.transform;
 
             if (estadoActual == EstadoIA.Patrullando)
@@ -80,12 +91,41 @@ public class IAZone : MonoBehaviour
 
             if (timerPerdidaVista >= tiempoParaPerderVista)
             {
-                estadoActual = EstadoIA.Patrullando;
-                agent.speed = velocidadPatrulla;
-                timerPerdidaVista = 0f;
-                IrAlSiguientePunto();
+                OlvidarJugador();
             }
         }
+    }
+
+    private bool JugadorEstaOculto(Transform objetivo)
+    {
+        if (objetivo == null) return false;
+
+        Playerinteract jugador = objetivo.GetComponentInParent<Playerinteract>();
+        return jugador != null && jugador.EstaDentroDelCuadro();
+    }
+
+    private void OlvidarJugador()
+    {
+        transformJugador = null;
+        estadoActual = EstadoIA.Patrullando;
+        timerPerdidaVista = 0f;
+        timerZona = 0f;
+        agent.speed = velocidadPatrulla;
+        agent.ResetPath();
+
+        if (zonas.Count == 0) return;
+
+        // Choose another zone instead of returning to the hiding place.
+        if (zonas.Count > 1)
+        {
+            int siguienteZona = Random.Range(0, zonas.Count - 1);
+            if (siguienteZona >= zonaActualIndex) siguienteZona++;
+            zonaActualIndex = siguienteZona;
+        }
+
+        Transform[] puntos = zonas[zonaActualIndex].puntosDeZona;
+        puntoActualIndex = puntos.Length > 0 ? Random.Range(0, puntos.Length) : 0;
+        IrAlSiguientePunto();
     }
 
     void ActualizarPatrullaje()
