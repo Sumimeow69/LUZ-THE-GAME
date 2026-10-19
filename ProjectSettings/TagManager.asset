@@ -15,7 +15,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - mure
   - 
   - 
   - 
@@ -53,6 +53,9 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 3749211477
+    locked: 0
+  - name: muros
+    uniqueID: 1595834121
     locked: 0
   m_RenderingLayers:
   - Default

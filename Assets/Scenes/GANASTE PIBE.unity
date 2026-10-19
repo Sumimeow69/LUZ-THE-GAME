@@ -265,7 +265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca28aaa8e0582de4e850152ead888e86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::scenemanagerboton
-  escenaSiguiente: 0
 --- !u!1 &487169903
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &705657972
 SpriteRenderer:
   serializedVersion: 2
