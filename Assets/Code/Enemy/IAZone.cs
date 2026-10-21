@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using UnityEngine.Rendering.Universal;
 public enum EstadoIA { Patrullando, Persiguiendo }
 
 [System.Serializable]
@@ -35,13 +35,35 @@ public class IAZone : MonoBehaviour
     private NavMeshAgent agent;
     private EstadoIA estadoActual = EstadoIA.Patrullando;
 
+    [Header("Iluminacion de Persecucion")]
+    [SerializeField] private Light2D luzPersecucion;
+    [SerializeField, Range(0f, 1f)] private float opacidadMaxima = 1f;
+    [SerializeField, Min(0.01f)] private float velocidadOpacidad = 0.5f;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.speed = velocidadPatrulla;
         IrAlSiguientePunto();
     }
+    private void ActualizarLuzPersecucion()
+    {
+        if (luzPersecucion == null) return;
 
+        float objetivo = estadoActual == EstadoIA.Persiguiendo
+            ? opacidadMaxima
+            : 0f;
+
+        Color color = luzPersecucion.color;
+
+        color.a = Mathf.MoveTowards(
+            color.a,
+            objetivo,
+            velocidadOpacidad * Time.deltaTime
+        );
+
+        luzPersecucion.color = color;
+    }
     void Update()
     {
         DeteccionJugador();
@@ -56,6 +78,7 @@ public class IAZone : MonoBehaviour
                 ActualizarPersecucion();
                 break;
         }
+        ActualizarLuzPersecucion();
     }
 
     void DeteccionJugador()
