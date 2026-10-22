@@ -71,7 +71,15 @@ public class Playerinteract : MonoBehaviour
     {
         if (ajolotesRecolectados <= 0)
         {
-            return; //skip
+            if (spriteCofre != null)
+            {
+                if (efectoCofre != null)
+                    StopCoroutine(efectoCofre);
+
+                efectoCofre = StartCoroutine(EfectoCofre(Color.red));
+            }
+
+            return;
         }
 
         ajolotesAlmacenados += ajolotesRecolectados;
@@ -91,7 +99,7 @@ public class Playerinteract : MonoBehaviour
                 StopCoroutine(efectoCofre);
             }
 
-            efectoCofre = StartCoroutine(EfectoCofre());
+            efectoCofre = StartCoroutine(EfectoCofre(Color.green));
         }
 
         if (ajolotesAlmacenados >= ajolotesTotales)
@@ -207,16 +215,16 @@ public class Playerinteract : MonoBehaviour
         }
     }
 
-    private IEnumerator EfectoCofre()
+    private IEnumerator EfectoCofre(Color color)
     {
-        spriteCofre.color = Color.green;
+        spriteCofre.color = color;
 
         yield return new WaitForSeconds(0.15f);
 
         spriteCofre.color = Color.white;
-
         efectoCofre = null;
     }
+
     private void PerderAjolotes()
     {
         foreach (GameObject ajolote in ajolotesRecolectadosObjetos)
