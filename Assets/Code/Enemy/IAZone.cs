@@ -24,6 +24,7 @@ public class IAZone : MonoBehaviour
     [Header("Detección y Persecución")]
     public float radioDeteccion = 4f;
     public LayerMask capaJugador;
+    public LayerMask capaObstaculos;
     public Transform transformJugador;
     public float tiempoParaPerderVista = 3f;
     private float timerPerdidaVista = 0f;
@@ -97,6 +98,21 @@ public class IAZone : MonoBehaviour
         if (jugadorDetectado != null)
         {
             if (JugadorEstaOculto(jugadorDetectado.transform)) return;
+
+            RaycastHit2D hit = Physics2D.Linecast(transform.position, jugadorDetectado.transform.position, capaObstaculos);
+
+            if (hit.collider != null)
+            {
+                if (estadoActual == EstadoIA.Persiguiendo)
+                {
+                    timerPerdidaVista += Time.deltaTime;
+                    if (timerPerdidaVista >= tiempoParaPerderVista)
+                    {
+                        OlvidarJugador();
+                    }
+                }
+                return;
+            }
 
             if (transformJugador == null) transformJugador = jugadorDetectado.transform;
 
