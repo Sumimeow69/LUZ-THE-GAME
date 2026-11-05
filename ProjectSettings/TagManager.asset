@@ -51,6 +51,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Tile-Pared-Frontal
+    uniqueID: 1904152891
+    locked: 0
   - name: BACK
     uniqueID: 1831924677
     locked: 0
