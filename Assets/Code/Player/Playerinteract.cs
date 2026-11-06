@@ -278,11 +278,23 @@ public class Playerinteract : MonoBehaviour
         return cuadroActual != null && cuadroActual.IsInside;
     }
 
+    private string NumeroConSprites(int numero)
+    {
+        string resultado = "";
+
+        foreach (char digito in numero.ToString())
+        {
+            resultado += $"<sprite name=\"{digito}\">";
+        }
+
+        return resultado;
+    }
+
     private void ActualizarTextoAlmacen()
     {
         if (textoAlmacen != null)
         {
-            textoAlmacen.text = ajolotesAlmacenados + "/" + ajolotesTotales;
+            textoAlmacen.text =$"<voffset=0.1em>{NumeroConSprites(ajolotesAlmacenados)}  </voffset>  " +$"<space=0.2em>{NumeroConSprites(ajolotesTotales)}";
         }
     }
 
