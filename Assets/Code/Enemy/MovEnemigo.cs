@@ -37,7 +37,10 @@ public class MovEnemigo : MonoBehaviour
                 return;
             }
 
-            SceneManager.LoadScene(2);
+            //GUARDAR INDEX PARA BOTON REPLAY
+            scenemanagerboton.nivelParaReplay = SceneManager.GetActiveScene().buildIndex;
+
+            SceneManager.LoadScene(5);
         }
     }
 }
