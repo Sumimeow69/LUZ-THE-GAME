@@ -9,7 +9,7 @@ public class Playerinteract : MonoBehaviour
 {
 
 
-
+    [SerializeField] private TMP_Text textoAlmacen;
 
     [SerializeField] GameObject AvisoAlmacen;
     [SerializeField] private int escenaSiguiente = 1;
@@ -42,6 +42,7 @@ public class Playerinteract : MonoBehaviour
         movimiento = GetComponent<movementpj>();
         playerCollider = GetComponent<Collider2D>();
         textoAjolotes.text = "Recolectados: 0/" + ajolotesTotales;
+        ActualizarTextoAlmacen();
     }
 
     private void Update()
@@ -85,6 +86,7 @@ public class Playerinteract : MonoBehaviour
         ajolotesAlmacenados += ajolotesRecolectados;
         ajolotesRecolectados = 0;
 
+        ActualizarTextoAlmacen();
 
         ajolotesRecolectadosObjetos.Clear();
 
@@ -275,4 +277,13 @@ public class Playerinteract : MonoBehaviour
     {
         return cuadroActual != null && cuadroActual.IsInside;
     }
+
+    private void ActualizarTextoAlmacen()
+    {
+        if (textoAlmacen != null)
+        {
+            textoAlmacen.text = ajolotesAlmacenados + "/" + ajolotesTotales;
+        }
+    }
+
 }
