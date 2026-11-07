@@ -180,7 +180,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1038605251
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7169054331505962642, guid: d41ae07742e7116419372791116856e0, type: 3}
@@ -542,7 +542,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -545755819
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8595179791085240469, guid: 287881821ed09a849b35f97b065988dc, type: 3}
@@ -796,6 +796,14 @@ MonoBehaviour:
   puntoSalida: {fileID: 3100244605261702243}
   aviso: {fileID: 3480568000204349260}
   eventoCuadro: {fileID: 8939921396140020972}
+  spriteIntegrado: {fileID: 2227788573024881422}
+  grupoBotones: {fileID: 869834118156367498}
+  fadeSprite: 0.25
+  fadeBotones: 0.1
+  esperaCamaraTP: 0.4
+  fadeSpriteTP: 0.25
+  fadeBotonesTP: 0.1
+  retrasoBotones: 0.1
   IsInside: 0
 --- !u!1 &8616879794856074225
 GameObject:

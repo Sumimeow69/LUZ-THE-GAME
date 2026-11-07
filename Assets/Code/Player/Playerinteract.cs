@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 using System.Collections;
@@ -7,8 +7,6 @@ using System.Collections.Generic;
 
 public class Playerinteract : MonoBehaviour
 {
-
-
     [SerializeField] private TMP_Text textoAlmacen;
 
     [SerializeField] GameObject AvisoAlmacen;
@@ -36,6 +34,13 @@ public class Playerinteract : MonoBehaviour
 
     private bool teletransportando = false;
 
+
+
+    [Header("Entrada al cuadro")]
+    [SerializeField, Min(0f)] private float demoraEntrada = 0.2f;
+
+    private bool entrandoAlCuadro = false;
+
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -47,6 +52,13 @@ public class Playerinteract : MonoBehaviour
 
     private void Update()
     {
+
+        if (entrandoAlCuadro ||teletransportando ||(cuadroActual != null && cuadroActual.EnTransicion))
+        {
+            return;
+        }
+
+
         if (Keyboard.current.eKey.wasPressedThisFrame)
         {
             if (cuadroActual != null)
@@ -111,14 +123,12 @@ public class Playerinteract : MonoBehaviour
     }
     private void Interactuar()
     {
+        if (cuadroActual == null || entrandoAlCuadro)
+            return;
+
         if (!cuadroActual.IsInside)
         {
-            PerderAjolotes();
-
-            cuadroActual.EntrarAlCuadro();
-
-            spriteRenderer.enabled = false;
-            movimiento.enabled = false;
+            StartCoroutine(EntrarAlCuadro());
         }
         else
         {
@@ -129,46 +139,68 @@ public class Playerinteract : MonoBehaviour
         }
     }
 
+    private IEnumerator EntrarAlCuadro()
+    {
+        entrandoAlCuadro = true;
+
+        // Guardamos el cuadro para mantener la misma referencia.
+        cuadroscript destino = cuadroActual;
+
+        // Se queda quieto, pero todavía es visible y vulnerable.
+        movimiento.enabled = false;
+        destino.OcultarAviso();
+
+        yield return new WaitForSeconds(demoraEntrada);
+
+        // Recién ahora se considera oculto.
+        PerderAjolotes();
+        spriteRenderer.enabled = false;
+
+        yield return destino.EntrarConTransicion();
+
+        entrandoAlCuadro = false;
+    }
+
     public void TeletransportarACuadro(cuadroscript destino)
     {
-        if (destino == null || teletransportando)
+        if (destino == null ||
+            destino == cuadroActual ||
+            teletransportando ||
+            entrandoAlCuadro ||
+            cuadroActual == null ||
+            !cuadroActual.ListoParaTP)
         {
             return;
         }
 
+        Transform salida = destino.GetPuntoSalida();
+
+        if (salida == null)
+            return;
+
+        StartCoroutine(TransicionEntreCuadros(destino, salida));
+    }
+
+    private IEnumerator TransicionEntreCuadros(cuadroscript destino,Transform salida)
+    {
         teletransportando = true;
 
-        // Desactivar el evento del cuadro actual
-        if (cuadroActual != null)
-        {
-            cuadroActual.DesactivarEvento();
-            cuadroActual.OcultarAviso();
-        }
+        // Apagar el contenido del cuadro anterior.
+        cuadroActual.DesactivarEvento();
+        cuadroActual.OcultarAviso();
 
-        // Obtener punto de salida
-        Transform puntoSalida = destino.GetPuntoSalida();
-
-        if (puntoSalida == null)
-        {
-            teletransportando = false;
-            return;
-        }
-
-        // Mover jugador
-        transform.position = puntoSalida.position;
-
-        // Nuevo cuadroActual
-        cuadroActual = destino;
-
-        // Entrar autom�ticamente al nuevo cuadro
-        destino.IsInside = true;
-
-        // Activar evento del destino
-        destino.ActivarEvento();
-
-        // Mantener jugador oculto y quieto
+        // Mantener a Jesús oculto y sin movimiento.
         spriteRenderer.enabled = false;
         movimiento.enabled = false;
+
+        // Marcar el destino antes de moverlo para mantenerlo protegido.
+        cuadroActual = destino;
+        destino.IsInside = true;
+
+        transform.position = salida.position;
+
+        // Sprite del cuadro → flechas → parpadeo y TP.
+        yield return destino.EntrarConTransicion(true);
 
         teletransportando = false;
     }
@@ -260,7 +292,7 @@ public class Playerinteract : MonoBehaviour
             if (cuadro != null)
             {
 
-                if (cuadro == cuadroActual && !teletransportando)
+                if (cuadro == cuadroActual &&!teletransportando &&!entrandoAlCuadro &&!cuadro.IsInside)
                 {
                     cuadroActual.OcultarAviso();
                     cuadroActual = null;

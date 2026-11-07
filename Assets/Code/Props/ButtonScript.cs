@@ -10,10 +10,12 @@ public class ButtonScript : MonoBehaviour
     [SerializeField, Range(0, 3)] private int indiceTecla; // [0] = W ; [1] = A ; [2] = S ; [3] = D !!!!!!!!!!!!!
 
     private bool ejecutado = false;
+    private bool disponible = false;
+
 
     private void Update()
     {
-        if (ejecutado || Keyboard.current == null)
+        if (!disponible || ejecutado || Keyboard.current == null)
         {
             return;
         }
@@ -51,6 +53,11 @@ public class ButtonScript : MonoBehaviour
     }
     public void Teletransportar()
     {
+        if (!disponible)
+        {
+            return;
+        }
+
         Playerinteract player = FindFirstObjectByType<Playerinteract>();
 
         if (player != null && cuadroDestino != null)
@@ -60,4 +67,9 @@ public class ButtonScript : MonoBehaviour
     }
 
 
+
+    public void SetDisponible(bool valor)
+    {
+        disponible = valor;
+    }
 }
