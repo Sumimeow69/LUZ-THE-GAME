@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 public enum EstadoIA { Patrullando, Persiguiendo }
 
 [System.Serializable]
@@ -213,5 +214,23 @@ public class IAZone : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, radioDeteccion);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Playerinteract player = other.gameObject.GetComponent<Playerinteract>();
+
+            if (player != null && player.EstaDentroDelCuadro())
+            {
+                return;
+            }
+
+            //GUARDAR INDEX PARA BOTON REPLAY
+            scenemanagerboton.nivelParaReplay = SceneManager.GetActiveScene().buildIndex;
+
+            SceneManager.LoadScene(5);
+        }
     }
 }

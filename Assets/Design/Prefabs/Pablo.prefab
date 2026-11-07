@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 7908755339943215276}
   - component: {fileID: 8935813053652828863}
   - component: {fileID: 4268897635457139555}
+  - component: {fileID: 7043622877856409170}
   m_Layer: 3
   m_Name: Pablo
   m_TagString: Player
@@ -285,3 +286,25 @@ MonoBehaviour:
   textoAjolotes: {fileID: 0}
   ajolotesTotales: 4
   spriteCofre: {fileID: 0}
+--- !u!95 &7043622877856409170
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7266248056871905529}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd308d88f858c9542a993b05c822820b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
