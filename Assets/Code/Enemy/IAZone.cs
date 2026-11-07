@@ -42,6 +42,11 @@ public class IAZone : MonoBehaviour
     [SerializeField, Range(0f, 1f)] private float opacidadMaxima = 1f;
     [SerializeField, Min(0.01f)] private float velocidadOpacidad = 0.5f;
 
+    [Header("Sonido de detección")]
+    [SerializeField] private AudioSource fuenteDeteccion;
+    [SerializeField] private AudioClip sonidoDeteccion;
+    [SerializeField, Range(0f, 1f)] private float volumenDeteccion = 1f;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -115,12 +120,20 @@ public class IAZone : MonoBehaviour
                 return;
             }
 
-            if (transformJugador == null) transformJugador = jugadorDetectado.transform;
+            transformJugador = jugadorDetectado.transform;
 
             if (estadoActual == EstadoIA.Patrullando)
             {
                 estadoActual = EstadoIA.Persiguiendo;
                 agent.speed = velocidadPersecucion;
+
+                if (fuenteDeteccion != null && sonidoDeteccion != null)
+                {
+                    fuenteDeteccion.PlayOneShot(
+                        sonidoDeteccion,
+                        volumenDeteccion
+                    );
+                }
             }
 
             timerPerdidaVista = 0f;

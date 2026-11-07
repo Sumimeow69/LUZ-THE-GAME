@@ -24,6 +24,11 @@ public class cuadroscript : MonoBehaviour
     [Header("Default Botones")]
     [SerializeField, Min(0f)] private float retrasoBotones = 0.1f;
 
+    [Header("Sonido del cuadro")]
+    [SerializeField] private AudioSource fuenteCuadro;
+    [SerializeField] private AudioClip sonidoEntrada;
+    [SerializeField, Range(0f, 1f)] private float volumenEntrada = 1f;
+
     public bool IsInside = false;
     public bool EnTransicion { get; private set; }
     public bool ListoParaTP { get; private set; }
@@ -82,6 +87,12 @@ public class cuadroscript : MonoBehaviour
         // Fade del sprite integrado en el cuadro.
         if (spriteIntegrado != null)
         {
+            // Suena una vez, justo cuando empieza el fade.
+            if (fuenteCuadro != null && sonidoEntrada != null)
+            {
+                fuenteCuadro.PlayOneShot(sonidoEntrada, volumenEntrada);
+            }
+
             yield return Fade(
                 new SpriteRenderer[] { spriteIntegrado },
                 duracionSprite

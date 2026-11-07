@@ -282,10 +282,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Playerinteract
   textoAlmacen: {fileID: 0}
   AvisoAlmacen: {fileID: 0}
-  escenaSiguiente: 3
+  escenaSiguiente: 6
   textoAjolotes: {fileID: 0}
   ajolotesTotales: 4
   spriteCofre: {fileID: 0}
+  demoraEntrada: 0
 --- !u!95 &7043622877856409170
 Animator:
   serializedVersion: 7
