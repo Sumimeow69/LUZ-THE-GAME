@@ -15,6 +15,21 @@ public class Playerinteract : MonoBehaviour
     private int ajolotesAlmacenados = 0;
 
 
+
+    [Header("Sonido al recoger ajolotes")]
+    [SerializeField] private AudioSource fuenteRecoleccion;
+    [SerializeField] private AudioClip sonidoRecoleccion;
+
+    [SerializeField, Range(0f, 1f)]
+    private float volumenRecoleccion = 1f;
+
+    [SerializeField]
+    private float[] pitchesRecoleccion =
+    {
+    1f, 1.1f, 1.2f, 1.3f, 1.4f, 1.5f
+};
+
+
     [SerializeField] private TMP_Text textoAjolotes;
     [SerializeField] private int ajolotesTotales = 4;
 
@@ -243,7 +258,9 @@ public class Playerinteract : MonoBehaviour
 
             ajolotesRecolectadosObjetos.Add(other.gameObject);
 
-            textoAjolotes.text = "Recolectados: " + ajolotesRecolectados + "/" + (ajolotesTotales - ajolotesAlmacenados);
+            SonarRecoleccion();
+
+            textoAjolotes.text = "Recolectados: " + ajolotesRecolectados + "/" +(ajolotesTotales - ajolotesAlmacenados);
 
             other.gameObject.SetActive(false);
         }
@@ -329,5 +346,43 @@ public class Playerinteract : MonoBehaviour
             textoAlmacen.text =$"<voffset=0.1em>{NumeroConSprites(ajolotesAlmacenados)}  </voffset>  " +$"<space=0.2em>{NumeroConSprites(ajolotesTotales)}";
         }
     }
+
+
+
+    private void SonarRecoleccion()
+    {
+        if (fuenteRecoleccion == null ||
+            sonidoRecoleccion == null ||
+            pitchesRecoleccion == null ||
+            pitchesRecoleccion.Length == 0)
+        {
+            return;
+        }
+
+        int progreso = ajolotesAlmacenados + ajolotesRecolectados;
+        int total = Mathf.Max(1, ajolotesTotales);
+
+        // Primer ajolote: primera variante.
+        // Último ajolote: última variante.
+        float proporcion = total > 1
+            ? Mathf.Clamp01((progreso - 1f) / (total - 1f))
+            : 0f;
+
+        int variante = Mathf.RoundToInt(
+            proporcion * (pitchesRecoleccion.Length - 1)
+        );
+
+        fuenteRecoleccion.pitch = Mathf.Clamp(
+            pitchesRecoleccion[variante],
+            0.1f,
+            3f
+        );
+
+        fuenteRecoleccion.PlayOneShot(
+            sonidoRecoleccion,
+            volumenRecoleccion
+        );
+    }
+
 
 }
