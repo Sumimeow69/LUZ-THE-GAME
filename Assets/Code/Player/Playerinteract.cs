@@ -7,6 +7,20 @@ using System.Collections.Generic;
 
 public class Playerinteract : MonoBehaviour
 {
+
+    [Header("Sonidos del almacen")]
+    [SerializeField] private AudioSource fuenteAlmacen;
+    [SerializeField] private AudioClip sonidoDeposito;
+    [SerializeField] private AudioClip sonidoCompletado;
+    [SerializeField] private AudioClip sonidoSinAjolotes;
+
+    [SerializeField, Range(0f, 1f)]
+    private float volumenAlmacen = 1f;
+
+    private bool completandoNivel = false;
+
+    [Header("ALMACEN SETTINGS")]
+
     [SerializeField] private TMP_Text textoAlmacen;
 
     [SerializeField] GameObject AvisoAlmacen;
@@ -97,8 +111,14 @@ public class Playerinteract : MonoBehaviour
     }
     private void DepositarAjolotes()
     {
+        if (completandoNivel)
+            return;
+
+        // Caso 1: no lleva ninguno.
         if (ajolotesRecolectados <= 0)
         {
+            SonarAlmacen(sonidoSinAjolotes);
+
             if (spriteCofre != null)
             {
                 if (efectoCofre != null)
@@ -113,27 +133,35 @@ public class Playerinteract : MonoBehaviour
         ajolotesAlmacenados += ajolotesRecolectados;
         ajolotesRecolectados = 0;
 
-        ActualizarTextoAlmacen();
-
         ajolotesRecolectadosObjetos.Clear();
 
-        textoAjolotes.text = "Recolectados: 0/" + (ajolotesTotales - ajolotesAlmacenados);
+        ActualizarTextoAlmacen();
 
+        textoAjolotes.text =
+            "Recolectados: 0/" +
+            (ajolotesTotales - ajolotesAlmacenados);
 
-        // Activar efecto visual del cofre
         if (spriteCofre != null)
         {
             if (efectoCofre != null)
-            {
                 StopCoroutine(efectoCofre);
-            }
 
             efectoCofre = StartCoroutine(EfectoCofre(Color.green));
         }
 
+        // Caso 2: con este depósito completa el total.
         if (ajolotesAlmacenados >= ajolotesTotales)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(escenaSiguiente);
+            completandoNivel = true;
+
+            SonarAlmacen(sonidoCompletado);
+
+            StartCoroutine(CompletarNivel());
+        }
+        else
+        {
+            // Caso 3: deposita, pero todavía faltan.
+            SonarAlmacen(sonidoDeposito);
         }
     }
     private void Interactuar()
@@ -382,6 +410,32 @@ public class Playerinteract : MonoBehaviour
             sonidoRecoleccion,
             volumenRecoleccion
         );
+    }
+
+
+
+    private void SonarAlmacen(AudioClip clip)
+    {
+        if (fuenteAlmacen != null && clip != null)
+        {
+            fuenteAlmacen.PlayOneShot(clip, volumenAlmacen);
+        }
+    }
+
+    private IEnumerator CompletarNivel()
+    {
+        // Esperar para que cambiar de escena no corte el sonido final.
+        float espera = 0f;
+
+        if (fuenteAlmacen != null && sonidoCompletado != null)
+        {
+            espera = sonidoCompletado.length /
+                     Mathf.Max(0.01f, Mathf.Abs(fuenteAlmacen.pitch));
+        }
+
+        yield return new WaitForSecondsRealtime(espera);
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene(escenaSiguiente);
     }
 
 
