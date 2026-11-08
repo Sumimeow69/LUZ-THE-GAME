@@ -13,7 +13,7 @@ public static class HiddenPlayerCheck
     private const string Done = "HiddenPlayerCheckDoneV2";
     private static readonly StringBuilder report = new StringBuilder();
 
-    static HiddenPlayerCheck() { EditorApplication.delayCall += Run; }
+    //static HiddenPlayerCheck() { EditorApplication.delayCall += Run; }
 
     private static void Set(object target, string name, object value)
     {
