@@ -47,8 +47,14 @@ public class IAZone : MonoBehaviour
     [SerializeField] private AudioClip sonidoDeteccion;
     [SerializeField, Range(0f, 1f)] private float volumenDeteccion = 1f;
 
+
+    [Header("TV TUBO GAMEOBJ")]
+    [SerializeField] private GameObject filtroPersecucion;
+
     void Start()
     {
+        if (filtroPersecucion != null)
+            filtroPersecucion.SetActive(false);
         agent = GetComponent<NavMeshAgent>();
         agent.speed = velocidadPatrulla;
         IrAlSiguientePunto();
@@ -127,6 +133,9 @@ public class IAZone : MonoBehaviour
                 estadoActual = EstadoIA.Persiguiendo;
                 agent.speed = velocidadPersecucion;
 
+                if (filtroPersecucion != null)
+                    filtroPersecucion.SetActive(true);
+
                 if (fuenteDeteccion != null && sonidoDeteccion != null)
                 {
                     fuenteDeteccion.PlayOneShot(
@@ -153,7 +162,9 @@ public class IAZone : MonoBehaviour
     {
         if (objetivo == null) return false;
 
-        Playerinteract jugador = objetivo.GetComponentInParent<Playerinteract>();
+        Playerinteract jugador =
+            objetivo.GetComponentInParent<Playerinteract>();
+
         return jugador != null && jugador.EstaDentroDelCuadro();
     }
 
@@ -161,6 +172,10 @@ public class IAZone : MonoBehaviour
     {
         transformJugador = null;
         estadoActual = EstadoIA.Patrullando;
+
+        if (filtroPersecucion != null)
+            filtroPersecucion.SetActive(false);
+
         timerPerdidaVista = 0f;
         timerZona = 0f;
         agent.speed = velocidadPatrulla;

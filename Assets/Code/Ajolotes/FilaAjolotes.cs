@@ -85,6 +85,9 @@ public class FilaAjolotes : MonoBehaviour
     {
         foreach (Transform compañero in seguidores)
         {
+            if (compañero == null)
+                continue;
+
             compañero.gameObject.SetActive(false);
             Destroy(compañero.gameObject);
         }
