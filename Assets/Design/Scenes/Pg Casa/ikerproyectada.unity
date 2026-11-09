@@ -21333,6 +21333,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1139503918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892942916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bda10e538fe940f4ab541dbffed08db6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FilaAjolotes
+  prefabVisual: {fileID: 997195460119565436, guid: a14654b14ba520c4e90af7de4d5a5b01, type: 3}
+  separacion: 0.85
 --- !u!1 &1151827304
 GameObject:
   m_ObjectHideFlags: 0
@@ -25372,6 +25386,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7266248056871905529, guid: 9ed1ae15b0859eb459def76cf4dbcee7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1139503917}
+    - targetCorrespondingSourceObject: {fileID: 7266248056871905529, guid: 9ed1ae15b0859eb459def76cf4dbcee7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1139503918}
   m_SourcePrefab: {fileID: 100100000, guid: 9ed1ae15b0859eb459def76cf4dbcee7, type: 3}
 --- !u!1001 &6490917407964336956
 PrefabInstance:

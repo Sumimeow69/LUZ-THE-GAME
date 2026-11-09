@@ -70,12 +70,14 @@ public class Playerinteract : MonoBehaviour
 
     private bool entrandoAlCuadro = false;
 
+    private FilaAjolotes fila;
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         movimiento = GetComponent<movementpj>();
         playerCollider = GetComponent<Collider2D>();
         textoAjolotes.text = "Recolectados: 0/" + ajolotesTotales;
+        fila = GetComponent<FilaAjolotes>();
         ActualizarTextoAlmacen();
     }
 
@@ -133,6 +135,7 @@ public class Playerinteract : MonoBehaviour
         ajolotesAlmacenados += ajolotesRecolectados;
         ajolotesRecolectados = 0;
 
+        fila.Limpiar();
         ajolotesRecolectadosObjetos.Clear();
 
         ActualizarTextoAlmacen();
@@ -291,6 +294,10 @@ public class Playerinteract : MonoBehaviour
             textoAjolotes.text = "Recolectados: " + ajolotesRecolectados + "/" +(ajolotesTotales - ajolotesAlmacenados);
 
             other.gameObject.SetActive(false);
+
+
+            ajolotesRecolectadosObjetos.Add(other.gameObject);
+            fila.Agregar();
         }
     }
 
@@ -306,6 +313,8 @@ public class Playerinteract : MonoBehaviour
 
     private void PerderAjolotes()
     {
+        fila.Limpiar();
+
         foreach (GameObject ajolote in ajolotesRecolectadosObjetos)
         {
             ajolote.SetActive(true);
