@@ -15283,7 +15283,7 @@ MonoBehaviour:
   velocidadPersecucion: 5
   luzPersecucion: {fileID: 404692130}
   opacidadMaxima: 1
-  velocidadOpacidad: 1.5
+  velocidadOpacidad: 2
   fuenteDeteccion: {fileID: 820795760}
   sonidoDeteccion: {fileID: 8300000, guid: 499d0aabde327e84f8aca8009959ef77, type: 3}
   volumenDeteccion: 1
