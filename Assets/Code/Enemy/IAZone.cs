@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
+using UnityEngine.Rendering;
+
 public enum EstadoIA { Patrullando, Persiguiendo }
 
 [System.Serializable]
@@ -48,13 +50,14 @@ public class IAZone : MonoBehaviour
     [SerializeField, Range(0f, 1f)] private float volumenDeteccion = 1f;
 
 
-    [Header("TV TUBO GAMEOBJ")]
-    [SerializeField] private GameObject filtroPersecucion;
+    [Header("Filtro de persecución")]
+    [SerializeField] private Volume filtroPersecucion;
+    [SerializeField, Min(0.01f)] private float duracionFade = 0.25f;
 
     void Start()
     {
         if (filtroPersecucion != null)
-            filtroPersecucion.SetActive(false);
+            filtroPersecucion.weight = 0f;
         agent = GetComponent<NavMeshAgent>();
         agent.speed = velocidadPatrulla;
         IrAlSiguientePunto();
@@ -92,6 +95,18 @@ public class IAZone : MonoBehaviour
                 break;
         }
         ActualizarLuzPersecucion();
+        if (filtroPersecucion != null)
+        {
+            float objetivo = estadoActual == EstadoIA.Persiguiendo
+                ? 1f
+                : 0f;
+
+            filtroPersecucion.weight = Mathf.MoveTowards(
+                filtroPersecucion.weight,
+                objetivo,
+                Time.deltaTime / duracionFade
+            );
+        }
     }
 
     void DeteccionJugador()
@@ -133,8 +148,7 @@ public class IAZone : MonoBehaviour
                 estadoActual = EstadoIA.Persiguiendo;
                 agent.speed = velocidadPersecucion;
 
-                if (filtroPersecucion != null)
-                    filtroPersecucion.SetActive(true);
+
 
                 if (fuenteDeteccion != null && sonidoDeteccion != null)
                 {
@@ -173,8 +187,6 @@ public class IAZone : MonoBehaviour
         transformJugador = null;
         estadoActual = EstadoIA.Patrullando;
 
-        if (filtroPersecucion != null)
-            filtroPersecucion.SetActive(false);
 
         timerPerdidaVista = 0f;
         timerZona = 0f;

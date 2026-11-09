@@ -15279,15 +15279,16 @@ MonoBehaviour:
     m_Bits: 64
   transformJugador: {fileID: 1139503909}
   tiempoParaPerderVista: 3
-  velocidadPatrulla: 5
+  velocidadPatrulla: 4
   velocidadPersecucion: 5
   luzPersecucion: {fileID: 404692130}
   opacidadMaxima: 1
-  velocidadOpacidad: 0.5
+  velocidadOpacidad: 1.5
   fuenteDeteccion: {fileID: 820795760}
   sonidoDeteccion: {fileID: 8300000, guid: 499d0aabde327e84f8aca8009959ef77, type: 3}
   volumenDeteccion: 1
-  filtroPersecucion: {fileID: 1425832897}
+  filtroPersecucion: {fileID: 2073807015}
+  duracionFade: 0.25
 --- !u!82 &820795760
 AudioSource:
   m_ObjectHideFlags: 0
