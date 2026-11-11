@@ -39,6 +39,8 @@ public class IAZone : MonoBehaviour
     private NavMeshAgent agent;
     private EstadoIA estadoActual = EstadoIA.Patrullando;
 
+    private Animator animator;
+
     [Header("Iluminacion de Persecucion")]
     [SerializeField] private Light2D luzPersecucion;
     [SerializeField, Range(0f, 1f)] private float opacidadMaxima = 1f;
@@ -54,6 +56,11 @@ public class IAZone : MonoBehaviour
     [SerializeField] private Volume filtroPersecucion;
     [SerializeField, Min(0.01f)] private float duracionFade = 0.25f;
 
+
+    private void Awake()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
     void Start()
     {
         if (filtroPersecucion != null)
@@ -106,6 +113,21 @@ public class IAZone : MonoBehaviour
                 objetivo,
                 Time.deltaTime / duracionFade
             );
+        }
+
+        Animaciones();
+    }
+
+    void Animaciones()
+    {
+        Vector3 velocidadAgente = agent.velocity;
+
+        if (Mathf.Abs(velocidadAgente.x) > 0.01f || Mathf.Abs(velocidadAgente.y) > 0.01f ) 
+        {
+            Vector2 direccion = velocidadAgente.normalized;
+
+            animator.SetFloat("VelocidadX", direccion.x);
+            animator.SetFloat("VelocidadY", direccion.y);
         }
     }
 
