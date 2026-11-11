@@ -280,9 +280,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 129ed830f9ca2ae4ca01cf0296a07f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Playerinteract
+  fuenteAlmacen: {fileID: 0}
+  sonidoDeposito: {fileID: 0}
+  sonidoCompletado: {fileID: 0}
+  sonidoSinAjolotes: {fileID: 0}
+  volumenAlmacen: 1
   textoAlmacen: {fileID: 0}
   AvisoAlmacen: {fileID: 0}
   escenaSiguiente: 6
+  fuenteRecoleccion: {fileID: 0}
+  sonidoRecoleccion: {fileID: 0}
+  volumenRecoleccion: 1
+  pitchesRecoleccion:
+  - 1
+  - 1.1
+  - 1.2
+  - 1.3
+  - 1.4
+  - 1.5
   textoAjolotes: {fileID: 0}
   ajolotesTotales: 4
   spriteCofre: {fileID: 0}
