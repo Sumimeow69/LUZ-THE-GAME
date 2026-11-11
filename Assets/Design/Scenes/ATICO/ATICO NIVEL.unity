@@ -1406,8 +1406,8 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1904152891
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -20645,6 +20645,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3962551759539891779, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8587795472731212653, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
       propertyPath: zonas.Array.size
       value: 2
@@ -32798,7 +32802,7 @@ Transform:
   m_GameObject: {fileID: 1883199101}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4674826, y: 1.1902999, z: -9.36}
+  m_LocalPosition: {x: 0.10013771, y: 1.1903, z: -9.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33418,7 +33422,7 @@ Transform:
   m_GameObject: {fileID: 1941478486}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4674826, y: 1.1902999, z: -9.36}
+  m_LocalPosition: {x: 0.10013771, y: 1.1903, z: -9.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
