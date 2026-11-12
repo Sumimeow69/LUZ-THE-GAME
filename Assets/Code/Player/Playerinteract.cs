@@ -21,6 +21,7 @@ public class Playerinteract : MonoBehaviour
 
     [Header("ALMACEN SETTINGS")]
 
+    [Tooltip("Opcional. Contador del almacen, con TextMeshPro en el mundo o en un Canvas.")]
     [SerializeField] private TMP_Text textoAlmacen;
 
     [SerializeField] GameObject AvisoAlmacen;
@@ -44,6 +45,7 @@ public class Playerinteract : MonoBehaviour
 };
 
 
+    [Tooltip("Opcional. Contador de recolectados. Puede quedar en None si la escena no lo usa.")]
     [SerializeField] private TMP_Text textoAjolotes;
     [SerializeField] private int ajolotesTotales = 4;
 
@@ -76,8 +78,8 @@ public class Playerinteract : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         movimiento = GetComponent<movementpj>();
         playerCollider = GetComponent<Collider2D>();
-        textoAjolotes.text = "Recolectados: 0/" + ajolotesTotales;
         fila = GetComponent<FilaAjolotes>();
+        ActualizarTextoAjolotes();
         ActualizarTextoAlmacen();
     }
 
@@ -140,9 +142,7 @@ public class Playerinteract : MonoBehaviour
 
         ActualizarTextoAlmacen();
 
-        textoAjolotes.text =
-            "Recolectados: 0/" +
-            (ajolotesTotales - ajolotesAlmacenados);
+        ActualizarTextoAjolotes();
 
         if (spriteCofre != null)
         {
@@ -291,7 +291,7 @@ public class Playerinteract : MonoBehaviour
 
             SonarRecoleccion();
 
-            textoAjolotes.text = "Recolectados: " + ajolotesRecolectados + "/" +(ajolotesTotales - ajolotesAlmacenados);
+            ActualizarTextoAjolotes();
 
             other.gameObject.SetActive(false);
 
@@ -324,7 +324,7 @@ public class Playerinteract : MonoBehaviour
 
         ajolotesRecolectados = 0;
 
-        textoAjolotes.text = "Recolectados: 0/" + (ajolotesTotales - ajolotesAlmacenados);
+        ActualizarTextoAjolotes();
     }
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -374,6 +374,15 @@ public class Playerinteract : MonoBehaviour
         }
 
         return resultado;
+    }
+
+    private void ActualizarTextoAjolotes()
+    {
+        if (textoAjolotes != null)
+        {
+            textoAjolotes.text = "Recolectados: " + ajolotesRecolectados + "/" +
+                (ajolotesTotales - ajolotesAlmacenados);
+        }
     }
 
     private void ActualizarTextoAlmacen()
