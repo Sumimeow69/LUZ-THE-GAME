@@ -462,6 +462,8 @@ public class Playerinteract : MonoBehaviour
         yield return new WaitForSecondsRealtime(espera);
 
         // Restaurar el tiempo antes de que se inicialice la siguiente escena.
+        scenemanagerboton.nivelParaReplay =
+            UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
         Time.timeScale = escalaTiempoAnterior;
         UnityEngine.SceneManagement.SceneManager.LoadScene(escenaSiguiente);
     }

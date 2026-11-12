@@ -18803,6 +18803,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 55454113}
     m_Modifications:
+    - target: {fileID: 2227788573024881422, guid: 80b8d5c7b207ad646b118f4dd255b5bc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7307421117274937464, guid: 818944410584c774abee919c22fe5688, type: 3}
     - target: {fileID: 2892691305845639271, guid: 80b8d5c7b207ad646b118f4dd255b5bc, type: 3}
       propertyPath: indiceTecla
       value: 1
@@ -18859,6 +18863,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5813485888996277873, guid: 80b8d5c7b207ad646b118f4dd255b5bc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955548175845824992, guid: 80b8d5c7b207ad646b118f4dd255b5bc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.43
+      objectReference: {fileID: 0}
     - target: {fileID: 6458394569330614210, guid: 80b8d5c7b207ad646b118f4dd255b5bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.58
@@ -18866,6 +18878,22 @@ PrefabInstance:
     - target: {fileID: 6458394569330614210, guid: 80b8d5c7b207ad646b118f4dd255b5bc, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453728132968007788, guid: 80b8d5c7b207ad646b118f4dd255b5bc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.4999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453728132968007788, guid: 80b8d5c7b207ad646b118f4dd255b5bc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453728132968007788, guid: 80b8d5c7b207ad646b118f4dd255b5bc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8453728132968007788, guid: 80b8d5c7b207ad646b118f4dd255b5bc, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8712546629815851662, guid: 80b8d5c7b207ad646b118f4dd255b5bc, type: 3}
       propertyPath: m_Camera
@@ -18903,6 +18931,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 11.3
       objectReference: {fileID: 0}
+    - target: {fileID: 9082079630952208715, guid: 80b8d5c7b207ad646b118f4dd255b5bc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2186321091342891602, guid: bb03a0431ff50b74b8698b01806bb5a0, type: 3}
     - target: {fileID: 9082079630952208715, guid: 80b8d5c7b207ad646b118f4dd255b5bc, type: 3}
       propertyPath: m_SortingOrder
       value: -1
