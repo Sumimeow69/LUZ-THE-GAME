@@ -28,6 +28,9 @@ public class MovEnemigo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (Time.timeScale == 0f)
+            return;
+
         if (other.CompareTag("Player"))
         {
             Playerinteract player = other.gameObject.GetComponent<Playerinteract>();

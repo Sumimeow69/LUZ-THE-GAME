@@ -801,7 +801,7 @@ MonoBehaviour:
   grupoBotones: {fileID: 869834118156367498}
   fadeSprite: 0.25
   fadeBotones: 0.1
-  esperaCamaraTP: 0.4
+  esperaCamaraTP: 0.55
   fadeSpriteTP: 0.25
   fadeBotonesTP: 0.1
   retrasoBotones: 0.1

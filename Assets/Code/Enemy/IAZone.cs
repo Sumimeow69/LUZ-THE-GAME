@@ -89,6 +89,9 @@ public class IAZone : MonoBehaviour
     }
     void Update()
     {
+        if (Time.timeScale == 0f)
+            return;
+
         DeteccionJugador();
 
         switch (estadoActual)
@@ -280,6 +283,9 @@ public class IAZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (Time.timeScale == 0f)
+            return;
+
         if (other.CompareTag("Player"))
         {
             Playerinteract player = other.gameObject.GetComponent<Playerinteract>();

@@ -16,6 +16,9 @@ public class movementpj : MonoBehaviour
     }
     void Update()
     {
+        if (Time.timeScale == 0f)
+            return;
+
         
         movement.x = 0;
         movement.y = 0;

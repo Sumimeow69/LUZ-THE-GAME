@@ -18,6 +18,7 @@ public class Playerinteract : MonoBehaviour
     private float volumenAlmacen = 1f;
 
     private bool completandoNivel = false;
+    private float escalaTiempoAnterior;
 
     [Header("ALMACEN SETTINGS")]
 
@@ -86,7 +87,7 @@ public class Playerinteract : MonoBehaviour
     private void Update()
     {
 
-        if (entrandoAlCuadro ||teletransportando ||(cuadroActual != null && cuadroActual.EnTransicion))
+        if (completandoNivel || entrandoAlCuadro ||teletransportando ||(cuadroActual != null && cuadroActual.EnTransicion))
         {
             return;
         }
@@ -156,6 +157,8 @@ public class Playerinteract : MonoBehaviour
         if (ajolotesAlmacenados >= ajolotesTotales)
         {
             completandoNivel = true;
+            escalaTiempoAnterior = Time.timeScale;
+            Time.timeScale = 0f;
 
             SonarAlmacen(sonidoCompletado);
 
@@ -209,7 +212,7 @@ public class Playerinteract : MonoBehaviour
 
     public void TeletransportarACuadro(cuadroscript destino)
     {
-        if (destino == null ||
+        if (completandoNivel || destino == null ||
             destino == cuadroActual ||
             teletransportando ||
             entrandoAlCuadro ||
@@ -253,6 +256,9 @@ public class Playerinteract : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (completandoNivel)
+            return;
+
         if (other.CompareTag("Cuadro"))
         {
             cuadroscript cuadro = other.GetComponent<cuadroscript>();
@@ -328,6 +334,8 @@ public class Playerinteract : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
+        if (completandoNivel)
+            return;
 
         if (other.CompareTag("Almacen"))
         {
@@ -453,8 +461,19 @@ public class Playerinteract : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(espera);
 
+        // Restaurar el tiempo antes de que se inicialice la siguiente escena.
+        Time.timeScale = escalaTiempoAnterior;
         UnityEngine.SceneManagement.SceneManager.LoadScene(escenaSiguiente);
     }
 
+    private void OnDisable()
+    {
+        if (completandoNivel)
+        {
+            Time.timeScale = escalaTiempoAnterior;
+            StopAllCoroutines();
+            completandoNivel = false;
+        }
+    }
 
 }

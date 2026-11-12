@@ -14,6 +14,9 @@ public class AIPatrullaje : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f)
+            return;
+
         if (!agent.pathPending && agent.remainingDistance < 0.1f )
         {
             puntoActualIndex = (puntoActualIndex + 1) % ptsPatrullaje.Length;

@@ -143,4 +143,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Musicamanager
   musica: {fileID: 8300000, guid: a107e58d678ca9d4d9b9ab5a63ec20f2, type: 3}
-  volumen: 0.4
+  volumen: 0.35
+  jesus: {fileID: 0}
+  hikari: {fileID: 0}
+  distanciaCercana: 1
+  distanciaLejana: 10
+  velocidadCambio: 0.5

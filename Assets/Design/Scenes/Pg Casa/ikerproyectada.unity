@@ -2587,7 +2587,7 @@ Transform:
   m_GameObject: {fileID: 142523009}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.091928, y: 11.430301, z: -10}
+  m_LocalPosition: {x: -8.481928, y: 11.2903, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2903,6 +2903,11 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!4 &204715014 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1514642505832686936, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
+  m_PrefabInstance: {fileID: 838550002}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &210262040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3518,7 +3523,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.091928, y: 11.430301, z: -10}
+  m_LocalPosition: {x: -8.481928, y: 11.2903, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5686,14 +5691,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hikari
       objectReference: {fileID: 0}
+    - target: {fileID: 5112293519576353503, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8587795472731212653, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
       propertyPath: luzPersecucion
       value: 
       objectReference: {fileID: 797725433}
     - target: {fileID: 8587795472731212653, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
-      propertyPath: fuenteDeteccion
+      propertyPath: sonidoDeteccion
       value: 
-      objectReference: {fileID: 2132403795}
+      objectReference: {fileID: 8300000, guid: d462cb80efb82d24c92bbb384090df46, type: 3}
     - target: {fileID: 8587795472731212653, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
       propertyPath: transformJugador
       value: 
@@ -25404,11 +25413,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
---- !u!82 &2132403795 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5112293519576353503, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
-  m_PrefabInstance: {fileID: 838550002}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2572276756202937954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25542,6 +25546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pablo
       objectReference: {fileID: 0}
+    - target: {fileID: 7266248056871905529, guid: 9ed1ae15b0859eb459def76cf4dbcee7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25599,6 +25607,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MUSICA
       objectReference: {fileID: 0}
+    - target: {fileID: 8650579543305011368, guid: 32ca43cc5b9ca2b4ca0739b2ddb8c2d2, type: 3}
+      propertyPath: jesus
+      value: 
+      objectReference: {fileID: 1139503909}
+    - target: {fileID: 8650579543305011368, guid: 32ca43cc5b9ca2b4ca0739b2ddb8c2d2, type: 3}
+      propertyPath: hikari
+      value: 
+      objectReference: {fileID: 204715014}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
