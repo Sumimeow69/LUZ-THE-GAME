@@ -35851,6 +35851,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 794493272}
     - target: {fileID: 8587795472731212653, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
+      propertyPath: velocidadPatrulla
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587795472731212653, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
+      propertyPath: velocidadPersecucion
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587795472731212653, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
       propertyPath: zonas.Array.data[0].nombreZona
       value: Habitacion 1
       objectReference: {fileID: 0}
