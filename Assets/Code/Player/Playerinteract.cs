@@ -66,7 +66,7 @@ public class Playerinteract : MonoBehaviour
 
     private bool teletransportando = false;
 
-
+    private bool salidaPendiente = false;
 
     [Header("Entrada al cuadro")]
     [SerializeField, Min(0f)] private float demoraEntrada = 0.2f;
@@ -74,6 +74,8 @@ public class Playerinteract : MonoBehaviour
     private bool entrandoAlCuadro = false;
 
     private FilaAjolotes fila;
+
+
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -86,33 +88,54 @@ public class Playerinteract : MonoBehaviour
 
     private void Update()
     {
-
-        if (completandoNivel || entrandoAlCuadro ||teletransportando ||(cuadroActual != null && cuadroActual.EnTransicion))
+        if (completandoNivel)
         {
+            salidaPendiente = false;
             return;
         }
 
+        bool presionoE = Keyboard.current != null &&
+                         Keyboard.current.eKey.wasPressedThisFrame;
 
-        if (Keyboard.current.eKey.wasPressedThisFrame)
+        bool enTransicion = entrandoAlCuadro ||
+                            teletransportando ||
+                            (cuadroActual != null && cuadroActual.EnTransicion);
+
+        if (enTransicion)
         {
-            if (cuadroActual != null)
+            // Recordar una salida mientras entra o llega por TP.
+            if (presionoE && cuadroActual != null)
+                salidaPendiente = true;
+
+            return;
+        }
+
+        // Consumir primero la salida que quedó guardada.
+        if (salidaPendiente)
+        {
+            salidaPendiente = false;
+
+            if (cuadroActual != null && cuadroActual.IsInside)
             {
                 Interactuar();
+                return;
             }
-            else if (almacenTrigger)
-            {
-                if (AvisoAlmacen != null)
-                {
-                    AvisoAlmacen.SetActive(false);
-                }
-                DepositarAjolotes();
-            }
-
-
         }
-        
 
+        if (!presionoE)
+            return;
 
+        if (cuadroActual != null)
+        {
+            Interactuar();
+        }
+        else if (almacenTrigger)
+        {
+            if (AvisoAlmacen != null)
+                AvisoAlmacen.SetActive(false);
+
+            DepositarAjolotes();
+        }
     }
     private void DepositarAjolotes()
     {
@@ -230,7 +253,7 @@ public class Playerinteract : MonoBehaviour
         StartCoroutine(TransicionEntreCuadros(destino, salida));
     }
 
-    private IEnumerator TransicionEntreCuadros(cuadroscript destino,Transform salida)
+    private IEnumerator TransicionEntreCuadros(cuadroscript destino, Transform salida)
     {
         teletransportando = true;
 
@@ -354,7 +377,7 @@ public class Playerinteract : MonoBehaviour
             if (cuadro != null)
             {
 
-                if (cuadro == cuadroActual &&!teletransportando &&!entrandoAlCuadro &&!cuadro.IsInside)
+                if (cuadro == cuadroActual && !teletransportando && !entrandoAlCuadro && !cuadro.IsInside)
                 {
                     cuadroActual.OcultarAviso();
                     cuadroActual = null;
@@ -397,7 +420,7 @@ public class Playerinteract : MonoBehaviour
     {
         if (textoAlmacen != null)
         {
-            textoAlmacen.text =$"<voffset=0.1em>{NumeroConSprites(ajolotesAlmacenados)}  </voffset>  " +$"<space=0.2em>{NumeroConSprites(ajolotesTotales)}";
+            textoAlmacen.text = $"<voffset=0.1em>{NumeroConSprites(ajolotesAlmacenados)}  </voffset>  " + $"<space=0.2em>{NumeroConSprites(ajolotesTotales)}";
         }
     }
 

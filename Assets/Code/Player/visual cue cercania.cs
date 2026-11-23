@@ -44,14 +44,11 @@ public class visualcuecercania : MonoBehaviour
         Vector2 direccion = hikari.position - jugador.position;
         float distancia = direccion.magnitude;
 
-        float limiteAviso = Mathf.Max(
-            distanciaAviso, distanciaPeligro + 0.1f);
+        float limiteAviso = Mathf.Max(distanciaAviso, distanciaPeligro + 0.1f);
 
-        float objetivo = 1f - Mathf.InverseLerp(
-            distanciaPeligro, limiteAviso, distancia);
+        float objetivo = 1f - Mathf.InverseLerp(distanciaPeligro, limiteAviso, distancia);
 
-        intensidad = Mathf.MoveTowards(
-            intensidad, objetivo, suavidad * Time.deltaTime);
+        intensidad = Mathf.MoveTowards(intensidad, objetivo, suavidad * Time.deltaTime);
 
         punta.enabled = intensidad > 0.001f;
 
@@ -65,19 +62,15 @@ public class visualcuecercania : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, 0f, angulo);
         }
 
-        punta.transform.localPosition =
-            new Vector3(radioOrbita, 0f, 0f);
+        punta.transform.localPosition =new Vector3(radioOrbita, 0f, 0f);
 
-        Vector2 tamaño = Vector2.Lerp(
-            tamañoLejano, tamañoCercano, intensidad);
+        Vector2 tamaño = Vector2.Lerp(tamañoLejano, tamañoCercano, intensidad);
 
-        punta.transform.localScale =
-            new Vector3(tamaño.x, tamaño.y, 1f);
+        punta.transform.localScale =new Vector3(tamaño.x, tamaño.y, 1f);
 
-        Color color = Color.Lerp(
-            colorLejano, colorCercano, intensidad);
+        Color color = Color.Lerp(colorLejano, colorCercano, intensidad);
 
-        // Aparece y desaparece progresivamente en el límite del aviso.
+        
         color.a *= Mathf.SmoothStep(0f, 1f, intensidad);
 
         punta.color = color;

@@ -5043,7 +5043,7 @@ Transform:
   m_GameObject: {fileID: 142523009}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.117779, y: -23.7297, z: -10}
+  m_LocalPosition: {x: -13.361928, y: -24.0497, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7049,7 +7049,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.117779, y: -23.7297, z: -10}
+  m_LocalPosition: {x: -13.361928, y: -24.0497, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7988,8 +7988,8 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 00000000c3dbe73d556d78dfc5f3306dcdd5611615dc1bee
@@ -56220,11 +56220,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2291824179793754521, guid: 9ed1ae15b0859eb459def76cf4dbcee7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.1
+      value: -14.08
       objectReference: {fileID: 0}
     - target: {fileID: 2291824179793754521, guid: 9ed1ae15b0859eb459def76cf4dbcee7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.18
+      value: -23.66
       objectReference: {fileID: 0}
     - target: {fileID: 2291824179793754521, guid: 9ed1ae15b0859eb459def76cf4dbcee7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56343,6 +56343,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6927473877589462937, guid: 32ca43cc5b9ca2b4ca0739b2ddb8c2d2, type: 3}
+      propertyPath: m_Pitch
+      value: 1.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927473877589462937, guid: 32ca43cc5b9ca2b4ca0739b2ddb8c2d2, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: a107e58d678ca9d4d9b9ab5a63ec20f2, type: 3}
     - target: {fileID: 8578219220630204420, guid: 32ca43cc5b9ca2b4ca0739b2ddb8c2d2, type: 3}
       propertyPath: m_Name
       value: MUSICA

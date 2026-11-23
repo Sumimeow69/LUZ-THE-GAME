@@ -146,6 +146,6 @@ MonoBehaviour:
   volumen: 0.35
   jesus: {fileID: 0}
   hikari: {fileID: 0}
-  distanciaCercana: 1
-  distanciaLejana: 10
+  distanciaCercana: 2
+  distanciaLejana: 11
   velocidadCambio: 0.5

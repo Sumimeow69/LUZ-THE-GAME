@@ -217,7 +217,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   transformJugador: {fileID: 0}
-  tiempoParaPerderVista: 3
+  tiempoParaPerderVista: 4
   velocidadPatrulla: 5
   velocidadPersecucion: 6
   luzPersecucion: {fileID: 3962551759539891779}
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::sonido3d
   fuente: {fileID: 1057514865597896511}
-  sonido: {fileID: 8300000, guid: cfefabf6beca0c2489aac3c79941b269, type: 3}
+  sonido: {fileID: 8300000, guid: 100f9eca65d41a64fad17e90f27871c0, type: 3}
   intervalo: 5
 --- !u!82 &1057514865597896511
 AudioSource:
@@ -397,7 +397,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: cfefabf6beca0c2489aac3c79941b269, type: 3}
+  m_Resource: {fileID: 8300000, guid: 100f9eca65d41a64fad17e90f27871c0, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -408,7 +408,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 0
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 22
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
