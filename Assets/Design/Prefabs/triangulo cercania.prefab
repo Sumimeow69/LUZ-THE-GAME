@@ -48,13 +48,13 @@ MonoBehaviour:
   jugador: {fileID: 0}
   hikari: {fileID: 0}
   punta: {fileID: 1036354900854839581}
-  distanciaAviso: 10
+  distanciaAviso: 9
   distanciaPeligro: 3
-  radioOrbita: 1.25
+  radioOrbita: 1
   "tama\xF1oLejano": {x: 0.25, y: 0.3}
-  "tama\xF1oCercano": {x: 0.35, y: 1.45}
-  colorLejano: {r: 0.78386796, g: 0.5896226, b: 1, a: 0.25}
-  colorCercano: {r: 1, g: 0, b: 0.20659018, a: 1}
+  "tama\xF1oCercano": {x: 0.35, y: 0.6}
+  colorLejano: {r: 0.7646482, g: 1, b: 0.5801887, a: 0.5372549}
+  colorCercano: {r: 1, g: 0.16343501, b: 0, a: 1}
   suavidad: 1
   indicadorActivo: 1
 --- !u!1 &2066339065945751181
