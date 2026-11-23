@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b6189846b48997044b332964e6cb41db
+guid: 8f8b1e4f7e6b5ed4b96a97faef39b1df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8127479219195280876
-    second: Screenshot_2026-11-07_005604_0
+      213: 2374283044733696602
+    second: Screenshot 2026-11-07 005604_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Screenshot_2026-11-07_005604_0
+      name: Screenshot 2026-11-07 005604_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 433
-        height: 352
+        width: 500
+        height: 407
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cedf083e94b9ac070800000000000000
-      internalID: 8127479219195280876
+      spriteID: a5ab59589d523f020800000000000000
+      internalID: 2374283044733696602
       vertices: []
       indices: 
       edges: []
@@ -161,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Screenshot_2026-11-07_005604_0: 8127479219195280876
+      Screenshot 2026-11-07 005604_0: 2374283044733696602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
