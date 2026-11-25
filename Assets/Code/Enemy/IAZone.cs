@@ -56,6 +56,8 @@ public class IAZone : MonoBehaviour
     [SerializeField] private Volume filtroPersecucion;
     [SerializeField, Min(0.01f)] private float duracionFade = 0.25f;
 
+    [Header("Ref Visual Cue")]
+    [SerializeField] private visualcuecercania indicador;
 
     private void Awake()
     {
@@ -103,6 +105,12 @@ public class IAZone : MonoBehaviour
             case EstadoIA.Persiguiendo:
                 ActualizarPersecucion();
                 break;
+        }
+        if (indicador != null)
+        {
+            indicador.SetEnPersecucion(
+                estadoActual == EstadoIA.Persiguiendo
+            );
         }
         ActualizarLuzPersecucion();
         if (filtroPersecucion != null)

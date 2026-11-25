@@ -147,5 +147,5 @@ MonoBehaviour:
   jesus: {fileID: 0}
   hikari: {fileID: 0}
   distanciaCercana: 2
-  distanciaLejana: 11
+  distanciaLejana: 13
   velocidadCambio: 0.5

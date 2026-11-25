@@ -8974,6 +8974,10 @@ PrefabInstance:
       propertyPath: jugador
       value: 
       objectReference: {fileID: 1139503909}
+    - target: {fileID: 3054258844661810341, guid: 6b5e661ce601b174e8511c1e3f4ef974, type: 3}
+      propertyPath: distanciaAviso
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8294476476704497192, guid: 6b5e661ce601b174e8511c1e3f4ef974, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.12371
@@ -9019,6 +9023,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b5e661ce601b174e8511c1e3f4ef974, type: 3}
+--- !u!114 &736259194 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3054258844661810341, guid: 6b5e661ce601b174e8511c1e3f4ef974, type: 3}
+  m_PrefabInstance: {fileID: 736259193}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf66dc510f50f5747b8cbf3b0c8a9c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::visualcuecercania
 --- !u!1 &737146860
 GameObject:
   m_ObjectHideFlags: 0
@@ -10364,6 +10379,7 @@ MonoBehaviour:
   volumenDeteccion: 1
   filtroPersecucion: {fileID: 2073807015}
   duracionFade: 0.25
+  indicador: {fileID: 0}
 --- !u!82 &820795760
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10684,6 +10700,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8587795472731212653, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
+      propertyPath: indicador
+      value: 
+      objectReference: {fileID: 736259194}
     - target: {fileID: 8587795472731212653, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
       propertyPath: luzPersecucion
       value: 
@@ -56323,6 +56343,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4268897635457139555, guid: 9ed1ae15b0859eb459def76cf4dbcee7, type: 3}
+      propertyPath: indicador
+      value: 
+      objectReference: {fileID: 736259194}
     - target: {fileID: 4268897635457139555, guid: 9ed1ae15b0859eb459def76cf4dbcee7, type: 3}
       propertyPath: spriteCofre
       value: 

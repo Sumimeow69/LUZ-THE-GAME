@@ -37869,6 +37869,17 @@ Transform:
   - {fileID: 981054963}
   m_Father: {fileID: 209727064}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &649078008 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3054258844661810341, guid: 6b5e661ce601b174e8511c1e3f4ef974, type: 3}
+  m_PrefabInstance: {fileID: 2674946583410026404}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf66dc510f50f5747b8cbf3b0c8a9c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::visualcuecercania
 --- !u!1 &671787668
 GameObject:
   m_ObjectHideFlags: 0
@@ -38032,6 +38043,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1057514865597896511, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1514642505832686936, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.59
@@ -38088,6 +38103,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8281729857382882044, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587795472731212653, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
+      propertyPath: indicador
+      value: 
+      objectReference: {fileID: 649078008}
     - target: {fileID: 8587795472731212653, guid: 160b541655ef02f44a2029154a3e37be, type: 3}
       propertyPath: transformJugador
       value: 
@@ -39680,6 +39703,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 3.36
       objectReference: {fileID: 0}
+    - target: {fileID: 4268897635457139555, guid: 9ed1ae15b0859eb459def76cf4dbcee7, type: 3}
+      propertyPath: indicador
+      value: 
+      objectReference: {fileID: 649078008}
     - target: {fileID: 4268897635457139555, guid: 9ed1ae15b0859eb459def76cf4dbcee7, type: 3}
       propertyPath: spriteCofre
       value: 

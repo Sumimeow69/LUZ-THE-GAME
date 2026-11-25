@@ -75,6 +75,8 @@ public class Playerinteract : MonoBehaviour
 
     private FilaAjolotes fila;
 
+    [Header("Ref Visual Cue")]
+    [SerializeField] private visualcuecercania indicador;
 
     private void Awake()
     {
@@ -204,10 +206,14 @@ public class Playerinteract : MonoBehaviour
         }
         else
         {
+
             cuadroActual.SalirDelCuadro();
 
             spriteRenderer.enabled = true;
             movimiento.enabled = true;
+
+            if (indicador != null)
+                indicador.SetDentroDeCuadro(false);
         }
     }
 
@@ -227,6 +233,9 @@ public class Playerinteract : MonoBehaviour
         // Recién ahora se considera oculto.
         PerderAjolotes();
         spriteRenderer.enabled = false;
+
+        if (indicador != null)
+            indicador.SetDentroDeCuadro(true);
 
         yield return destino.EntrarConTransicion();
 
@@ -257,6 +266,10 @@ public class Playerinteract : MonoBehaviour
     {
         teletransportando = true;
 
+        // Apaga visual cue.
+        if (indicador != null)
+            indicador.SetTeletransportandose(true);
+
         // Apagar el contenido del cuadro anterior.
         cuadroActual.DesactivarEvento();
         cuadroActual.OcultarAviso();
@@ -275,6 +288,12 @@ public class Playerinteract : MonoBehaviour
         yield return destino.EntrarConTransicion(true);
 
         teletransportando = false;
+
+        if (indicador != null)
+        {
+            indicador.SetDentroDeCuadro(true);
+            indicador.SetTeletransportandose(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
