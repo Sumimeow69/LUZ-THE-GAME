@@ -303,6 +303,7 @@ MonoBehaviour:
   ajolotesTotales: 4
   spriteCofre: {fileID: 0}
   demoraEntrada: 0
+  indicador: {fileID: 0}
 --- !u!95 &7043622877856409170
 Animator:
   serializedVersion: 7

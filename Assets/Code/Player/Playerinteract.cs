@@ -520,4 +520,12 @@ public class Playerinteract : MonoBehaviour
         }
     }
 
+    public void ConfigurarObjetivoAjolotes(int cantidad)
+    {
+        ajolotesTotales = Mathf.Max(1, cantidad);
+
+        ActualizarTextoAjolotes();
+        ActualizarTextoAlmacen();
+    }
+
 }
