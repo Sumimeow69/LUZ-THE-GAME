@@ -1,0 +1,2483 @@
+fileFormatVersion: 2
+guid: 870a196259fce004a8f6e5e0af6ab1cd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2380588741196381891
+    second: MiniSprites_Buttons_0
+  - first:
+      213: -8801515363919204686
+    second: MiniSprites_Buttons_1
+  - first:
+      213: 2481540607193431717
+    second: MiniSprites_Buttons_2
+  - first:
+      213: -3038579928100116865
+    second: MiniSprites_Buttons_3
+  - first:
+      213: -3717293047792726690
+    second: MiniSprites_Buttons_4
+  - first:
+      213: 7614101607235658032
+    second: MiniSprites_Buttons_5
+  - first:
+      213: -6525433087558977255
+    second: MiniSprites_Buttons_6
+  - first:
+      213: 5590917516462003597
+    second: MiniSprites_Buttons_7
+  - first:
+      213: 7448490158752511150
+    second: MiniSprites_Buttons_8
+  - first:
+      213: 8957992014498092639
+    second: MiniSprites_Buttons_9
+  - first:
+      213: 1779109677238845939
+    second: MiniSprites_Buttons_10
+  - first:
+      213: -2287234500632824034
+    second: MiniSprites_Buttons_11
+  - first:
+      213: -6472123913173127792
+    second: MiniSprites_Buttons_12
+  - first:
+      213: -115933473766132554
+    second: MiniSprites_Buttons_13
+  - first:
+      213: -6651596690788833356
+    second: MiniSprites_Buttons_14
+  - first:
+      213: -5098659014947682867
+    second: MiniSprites_Buttons_15
+  - first:
+      213: -2644981176226383446
+    second: MiniSprites_Buttons_16
+  - first:
+      213: 5499873316533126322
+    second: MiniSprites_Buttons_17
+  - first:
+      213: -3363851993484979947
+    second: MiniSprites_Buttons_18
+  - first:
+      213: -953220177854177070
+    second: MiniSprites_Buttons_19
+  - first:
+      213: -2972272465048361298
+    second: MiniSprites_Buttons_20
+  - first:
+      213: 1037700072405433811
+    second: MiniSprites_Buttons_21
+  - first:
+      213: 5092976062364701536
+    second: MiniSprites_Buttons_22
+  - first:
+      213: 6051694674998801759
+    second: MiniSprites_Buttons_23
+  - first:
+      213: -3961675437425394492
+    second: MiniSprites_Buttons_24
+  - first:
+      213: -6073645622588329167
+    second: MiniSprites_Buttons_25
+  - first:
+      213: -4683664458502541847
+    second: MiniSprites_Buttons_26
+  - first:
+      213: 1622017138903527430
+    second: MiniSprites_Buttons_27
+  - first:
+      213: -6035258923019490935
+    second: MiniSprites_Buttons_28
+  - first:
+      213: -548107931904659241
+    second: MiniSprites_Buttons_29
+  - first:
+      213: -8636584234994763867
+    second: MiniSprites_Buttons_30
+  - first:
+      213: 6571820072609378949
+    second: MiniSprites_Buttons_31
+  - first:
+      213: 2669513929562674054
+    second: MiniSprites_Buttons_32
+  - first:
+      213: -5855771276678420945
+    second: MiniSprites_Buttons_33
+  - first:
+      213: 4886691286221008865
+    second: MiniSprites_Buttons_34
+  - first:
+      213: -3758037239800542056
+    second: MiniSprites_Buttons_35
+  - first:
+      213: -1356272186445684212
+    second: MiniSprites_Buttons_36
+  - first:
+      213: -5199236181931651240
+    second: MiniSprites_Buttons_37
+  - first:
+      213: 4593612113165473268
+    second: MiniSprites_Buttons_38
+  - first:
+      213: 7335085592203217515
+    second: MiniSprites_Buttons_39
+  - first:
+      213: 1398591608933115555
+    second: MiniSprites_Buttons_40
+  - first:
+      213: -5218540149524277756
+    second: MiniSprites_Buttons_41
+  - first:
+      213: -8462063752866586329
+    second: MiniSprites_Buttons_42
+  - first:
+      213: 7237723546558053743
+    second: MiniSprites_Buttons_43
+  - first:
+      213: -624289642644650964
+    second: MiniSprites_Buttons_44
+  - first:
+      213: -2848787379074441873
+    second: MiniSprites_Buttons_45
+  - first:
+      213: -9086775199313716675
+    second: MiniSprites_Buttons_46
+  - first:
+      213: 6800601256613372014
+    second: MiniSprites_Buttons_47
+  - first:
+      213: -3697977949724880894
+    second: MiniSprites_Buttons_48
+  - first:
+      213: -8644207950027538684
+    second: MiniSprites_Buttons_49
+  - first:
+      213: -556067671137544587
+    second: MiniSprites_Buttons_50
+  - first:
+      213: 6292389677172573059
+    second: MiniSprites_Buttons_51
+  - first:
+      213: -8725658100134106146
+    second: MiniSprites_Buttons_52
+  - first:
+      213: -3538150074312576550
+    second: MiniSprites_Buttons_53
+  - first:
+      213: 3917400784981838222
+    second: MiniSprites_Buttons_54
+  - first:
+      213: -3629576758383456966
+    second: MiniSprites_Buttons_55
+  - first:
+      213: 6805929175997012113
+    second: MiniSprites_Buttons_56
+  - first:
+      213: -5825342645574664096
+    second: MiniSprites_Buttons_57
+  - first:
+      213: -1051657078430729111
+    second: MiniSprites_Buttons_58
+  - first:
+      213: -8836178095620748379
+    second: MiniSprites_Buttons_59
+  - first:
+      213: 5998427327301650348
+    second: MiniSprites_Buttons_60
+  - first:
+      213: -5688614340849506757
+    second: MiniSprites_Buttons_61
+  - first:
+      213: -2157768974131435531
+    second: MiniSprites_Buttons_62
+  - first:
+      213: 4394864128717897733
+    second: MiniSprites_Buttons_63
+  - first:
+      213: 6225328831529858466
+    second: MiniSprites_Buttons_64
+  - first:
+      213: 2754231702946473140
+    second: MiniSprites_Buttons_65
+  - first:
+      213: 9125576239118034826
+    second: MiniSprites_Buttons_66
+  - first:
+      213: -9123763236159831141
+    second: MiniSprites_Buttons_67
+  - first:
+      213: -5261788210621577509
+    second: MiniSprites_Buttons_68
+  - first:
+      213: 5345121078498745745
+    second: MiniSprites_Buttons_69
+  - first:
+      213: -6049422294070592633
+    second: MiniSprites_Buttons_70
+  - first:
+      213: -2474466238700470353
+    second: MiniSprites_Buttons_71
+  - first:
+      213: -7203674790826254957
+    second: MiniSprites_Buttons_72
+  - first:
+      213: 2948637811484376919
+    second: MiniSprites_Buttons_73
+  - first:
+      213: 5133733423631567957
+    second: MiniSprites_Buttons_74
+  - first:
+      213: -6401211548010212877
+    second: MiniSprites_Buttons_75
+  - first:
+      213: 3877268748683257338
+    second: MiniSprites_Buttons_76
+  - first:
+      213: -49871172921087982
+    second: MiniSprites_Buttons_77
+  - first:
+      213: 3039519440049701359
+    second: MiniSprites_Buttons_78
+  - first:
+      213: -1608840675659145507
+    second: MiniSprites_Buttons_79
+  - first:
+      213: -5830000883378487764
+    second: MiniSprites_Buttons_80
+  - first:
+      213: 7005795155448598787
+    second: MiniSprites_Buttons_81
+  - first:
+      213: -6429827218498262021
+    second: MiniSprites_Buttons_82
+  - first:
+      213: 6456685703406660575
+    second: MiniSprites_Buttons_83
+  - first:
+      213: -1914954612274461250
+    second: MiniSprites_Buttons_84
+  - first:
+      213: -6256809383144761992
+    second: MiniSprites_Buttons_85
+  - first:
+      213: -235805146208030234
+    second: MiniSprites_Buttons_86
+  - first:
+      213: -6020279401120676987
+    second: MiniSprites_Buttons_87
+  - first:
+      213: -1489060256679190794
+    second: MiniSprites_Buttons_88
+  - first:
+      213: -8801139385031758132
+    second: MiniSprites_Buttons_89
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3102bc172376fed0800000000000000
+      internalID: -2380588741196381891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bee370b86cbad580800000000000000
+      internalID: -8801515363919204686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_2
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 90
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aeb873d804307220800000000000000
+      internalID: 2481540607193431717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_3
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 77
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76e5fb87abc4d5d0800000000000000
+      internalID: -3038579928100116865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_4
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 90
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d09480ba5896cc0800000000000000
+      internalID: -3717293047792726690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_5
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 77
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031230f0219baa960800000000000000
+      internalID: 7614101607235658032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 90
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919777a1e210175a0800000000000000
+      internalID: -6525433087558977255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_7
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 77
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d851a39fbdde69d40800000000000000
+      internalID: 5590917516462003597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_8
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 90
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea4bf69e55a5e5760800000000000000
+      internalID: 7448490158752511150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_9
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 77
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56d1f4964e215c70800000000000000
+      internalID: 8957992014498092639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 90
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1084843daa0b810800000000000000
+      internalID: 1779109677238845939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 77
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1733c7075c1240e0800000000000000
+      internalID: -2287234500632824034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_12
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 90
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d210d77956e26a0800000000000000
+      internalID: -6472123913173127792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_13
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 77
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b4b79eae1f146ef0800000000000000
+      internalID: -115933473766132554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_14
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 90
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b72e582d08c0b3a0800000000000000
+      internalID: -6651596690788833356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_15
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 77
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc54337c3aced39b0800000000000000
+      internalID: -5098659014947682867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_16
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 90
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa97e6942a32b4bd0800000000000000
+      internalID: -2644981176226383446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_17
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 77
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b44b9d44a9735c40800000000000000
+      internalID: 5499873316533126322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_18
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 90
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51196533f623151d0800000000000000
+      internalID: -3363851993484979947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_19
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 77
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d064427c4b75c2f0800000000000000
+      internalID: -953220177854177070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_20
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 90
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea62e19d0fd50c6d0800000000000000
+      internalID: -2972272465048361298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_21
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 77
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd7f17c7b6a66e00800000000000000
+      internalID: 1037700072405433811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_22
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 90
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063d0d6beb2eda640800000000000000
+      internalID: 5092976062364701536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_23
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 77
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f553d606e30fbf350800000000000000
+      internalID: 6051694674998801759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc7ed4fd2d4509c0800000000000000
+      internalID: -3961675437425394492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 51
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133340e5c7316bba0800000000000000
+      internalID: -6073645622588329167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_26
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 64
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed65d77df7400fb0800000000000000
+      internalID: -4683664458502541847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_27
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 51
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600b0f77eff828610800000000000000
+      internalID: 1622017138903527430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_28
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 64
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989aae55cf37e3ca0800000000000000
+      internalID: -6035258923019490935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_29
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 51
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0bf3c6dbab468f0800000000000000
+      internalID: -548107931904659241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_30
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 64
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7f5689560b42880800000000000000
+      internalID: -8636584234994763867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_31
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 51
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582f9ab798bc33b50800000000000000
+      internalID: 6571820072609378949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_32
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 64
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6835a8676c40c0520800000000000000
+      internalID: 2669513929562674054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_33
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 51
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26a5af8c0f1cbea0800000000000000
+      internalID: -5855771276678420945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef233285d301d340800000000000000
+      internalID: 4886691286221008865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_35
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 51
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ccff49a05c8dbc0800000000000000
+      internalID: -3758037239800542056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_36
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 64
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02a92cd1ad8d2de0800000000000000
+      internalID: -1356272186445684212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_37
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 51
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f0b904d3a98d7b0800000000000000
+      internalID: -5199236181931651240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_38
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 64
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5d82101e9cfbf30800000000000000
+      internalID: 4593612113165473268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_39
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 51
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6acb50bb757bc560800000000000000
+      internalID: 7335085592203217515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_40
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 64
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a6ec4488abc86310800000000000000
+      internalID: 1398591608933115555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_41
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 51
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406dd7d02650497b0800000000000000
+      internalID: -5218540149524277756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_42
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 64
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721ada7c9d5b09a80800000000000000
+      internalID: -8462063752866586329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_43
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 51
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6db21fe73f817460800000000000000
+      internalID: 7237723546558053743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_44
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 64
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24c53da0e31657f0800000000000000
+      internalID: -624289642644650964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_45
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 51
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6dd6a5e8f21778d0800000000000000
+      internalID: -2848787379074441873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_46
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 64
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a931b991a45e180800000000000000
+      internalID: -9086775199313716675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_47
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 51
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60e38fcfc6906e50800000000000000
+      internalID: 6800601256613372014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 38
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200db6fb5a42eacc0800000000000000
+      internalID: -3697977949724880894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f300e1baa990880800000000000000
+      internalID: -8644207950027538684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_50
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 38
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57694c636637848f0800000000000000
+      internalID: -556067671137544587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_51
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383c438a21f035750800000000000000
+      internalID: 6292389677172573059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_52
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 38
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edb2ffd303c38e680800000000000000
+      internalID: -8725658100134106146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_53
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1b39ad047f5eec0800000000000000
+      internalID: -3538150074312576550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_54
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 38
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89cda732476d5630800000000000000
+      internalID: 3917400784981838222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_55
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d4a872b2721adc0800000000000000
+      internalID: -3629576758383456966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_56
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 38
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198d4c5b684837e50800000000000000
+      internalID: 6805929175997012113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_57
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06086935ab9382fa0800000000000000
+      internalID: -5825342645574664096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 38
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c7c968573c761f0800000000000000
+      internalID: -1051657078430729111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_59
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab007e86d69f5580800000000000000
+      internalID: -8836178095620748379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_60
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 38
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca78fc68fd1be3350800000000000000
+      internalID: 5998427327301650348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_61
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36e875856bfd01b0800000000000000
+      internalID: -5688614340849506757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_62
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 38
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f76985ec801e02e0800000000000000
+      internalID: -2157768974131435531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_63
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500465cd3a1bdfc30800000000000000
+      internalID: 4394864128717897733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_64
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 38
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5b55dc69fc46650800000000000000
+      internalID: 6225328831529858466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_65
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b46e3b242ff83620800000000000000
+      internalID: 2754231702946473140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_66
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 38
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8720677d3f84ae70800000000000000
+      internalID: 9125576239118034826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_67
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93cced2da1e16180800000000000000
+      internalID: -9123763236159831141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_68
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 38
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd60096208f5af6b0800000000000000
+      internalID: -5261788210621577509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_69
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 25
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19dde5d1d4fad2a40800000000000000
+      internalID: 5345121078498745745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_70
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 38
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78bf79989722c0ca0800000000000000
+      internalID: -6049422294070592633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_71
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 25
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafbf81f01ee8add0800000000000000
+      internalID: -2474466238700470353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d5d57c1f7670c90800000000000000
+      internalID: -7203674790826254957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75fbfcc877aabe820800000000000000
+      internalID: 2948637811484376919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_74
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c0c1f595fae3740800000000000000
+      internalID: 5133733423631567957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_75
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f119bc13045a27a0800000000000000
+      internalID: -6401211548010212877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_76
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 12
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af52dff5263dec530800000000000000
+      internalID: 3877268748683257338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_77
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218a185be62de4ff0800000000000000
+      internalID: -49871172921087982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_78
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 12
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe18e00a3da8e2a20800000000000000
+      internalID: 3039519440049701359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_79
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde1323fdef3ca9e0800000000000000
+      internalID: -1608840675659145507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_80
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 12
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ef202d51da71fa0800000000000000
+      internalID: -5830000883378487764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_81
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3019aa95395993160800000000000000
+      internalID: 7005795155448598787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_82
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 12
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfbe542263aa4c6a0800000000000000
+      internalID: -6429827218498262021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_83
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdba5e13071ca9950800000000000000
+      internalID: 6456685703406660575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_84
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 12
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5826e0de6bc65e0800000000000000
+      internalID: -1914954612274461250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_85
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 875535a14095b29a0800000000000000
+      internalID: -6256809383144761992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_86
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 12
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1bf0808704abcf0800000000000000
+      internalID: -235805146208030234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_87
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583c99f08cba37ca0800000000000000
+      internalID: -6020279401120676987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_88
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 12
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe1c7ff59bc55be0800000000000000
+      internalID: -1489060256679190794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSprites_Buttons_89
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce6b781c521cd580800000000000000
+      internalID: -8801139385031758132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MiniSprites_Buttons_0: -2380588741196381891
+      MiniSprites_Buttons_1: -8801515363919204686
+      MiniSprites_Buttons_10: 1779109677238845939
+      MiniSprites_Buttons_11: -2287234500632824034
+      MiniSprites_Buttons_12: -6472123913173127792
+      MiniSprites_Buttons_13: -115933473766132554
+      MiniSprites_Buttons_14: -6651596690788833356
+      MiniSprites_Buttons_15: -5098659014947682867
+      MiniSprites_Buttons_16: -2644981176226383446
+      MiniSprites_Buttons_17: 5499873316533126322
+      MiniSprites_Buttons_18: -3363851993484979947
+      MiniSprites_Buttons_19: -953220177854177070
+      MiniSprites_Buttons_2: 2481540607193431717
+      MiniSprites_Buttons_20: -2972272465048361298
+      MiniSprites_Buttons_21: 1037700072405433811
+      MiniSprites_Buttons_22: 5092976062364701536
+      MiniSprites_Buttons_23: 6051694674998801759
+      MiniSprites_Buttons_24: -3961675437425394492
+      MiniSprites_Buttons_25: -6073645622588329167
+      MiniSprites_Buttons_26: -4683664458502541847
+      MiniSprites_Buttons_27: 1622017138903527430
+      MiniSprites_Buttons_28: -6035258923019490935
+      MiniSprites_Buttons_29: -548107931904659241
+      MiniSprites_Buttons_3: -3038579928100116865
+      MiniSprites_Buttons_30: -8636584234994763867
+      MiniSprites_Buttons_31: 6571820072609378949
+      MiniSprites_Buttons_32: 2669513929562674054
+      MiniSprites_Buttons_33: -5855771276678420945
+      MiniSprites_Buttons_34: 4886691286221008865
+      MiniSprites_Buttons_35: -3758037239800542056
+      MiniSprites_Buttons_36: -1356272186445684212
+      MiniSprites_Buttons_37: -5199236181931651240
+      MiniSprites_Buttons_38: 4593612113165473268
+      MiniSprites_Buttons_39: 7335085592203217515
+      MiniSprites_Buttons_4: -3717293047792726690
+      MiniSprites_Buttons_40: 1398591608933115555
+      MiniSprites_Buttons_41: -5218540149524277756
+      MiniSprites_Buttons_42: -8462063752866586329
+      MiniSprites_Buttons_43: 7237723546558053743
+      MiniSprites_Buttons_44: -624289642644650964
+      MiniSprites_Buttons_45: -2848787379074441873
+      MiniSprites_Buttons_46: -9086775199313716675
+      MiniSprites_Buttons_47: 6800601256613372014
+      MiniSprites_Buttons_48: -3697977949724880894
+      MiniSprites_Buttons_49: -8644207950027538684
+      MiniSprites_Buttons_5: 7614101607235658032
+      MiniSprites_Buttons_50: -556067671137544587
+      MiniSprites_Buttons_51: 6292389677172573059
+      MiniSprites_Buttons_52: -8725658100134106146
+      MiniSprites_Buttons_53: -3538150074312576550
+      MiniSprites_Buttons_54: 3917400784981838222
+      MiniSprites_Buttons_55: -3629576758383456966
+      MiniSprites_Buttons_56: 6805929175997012113
+      MiniSprites_Buttons_57: -5825342645574664096
+      MiniSprites_Buttons_58: -1051657078430729111
+      MiniSprites_Buttons_59: -8836178095620748379
+      MiniSprites_Buttons_6: -6525433087558977255
+      MiniSprites_Buttons_60: 5998427327301650348
+      MiniSprites_Buttons_61: -5688614340849506757
+      MiniSprites_Buttons_62: -2157768974131435531
+      MiniSprites_Buttons_63: 4394864128717897733
+      MiniSprites_Buttons_64: 6225328831529858466
+      MiniSprites_Buttons_65: 2754231702946473140
+      MiniSprites_Buttons_66: 9125576239118034826
+      MiniSprites_Buttons_67: -9123763236159831141
+      MiniSprites_Buttons_68: -5261788210621577509
+      MiniSprites_Buttons_69: 5345121078498745745
+      MiniSprites_Buttons_7: 5590917516462003597
+      MiniSprites_Buttons_70: -6049422294070592633
+      MiniSprites_Buttons_71: -2474466238700470353
+      MiniSprites_Buttons_72: -7203674790826254957
+      MiniSprites_Buttons_73: 2948637811484376919
+      MiniSprites_Buttons_74: 5133733423631567957
+      MiniSprites_Buttons_75: -6401211548010212877
+      MiniSprites_Buttons_76: 3877268748683257338
+      MiniSprites_Buttons_77: -49871172921087982
+      MiniSprites_Buttons_78: 3039519440049701359
+      MiniSprites_Buttons_79: -1608840675659145507
+      MiniSprites_Buttons_8: 7448490158752511150
+      MiniSprites_Buttons_80: -5830000883378487764
+      MiniSprites_Buttons_81: 7005795155448598787
+      MiniSprites_Buttons_82: -6429827218498262021
+      MiniSprites_Buttons_83: 6456685703406660575
+      MiniSprites_Buttons_84: -1914954612274461250
+      MiniSprites_Buttons_85: -6256809383144761992
+      MiniSprites_Buttons_86: -235805146208030234
+      MiniSprites_Buttons_87: -6020279401120676987
+      MiniSprites_Buttons_88: -1489060256679190794
+      MiniSprites_Buttons_89: -8801139385031758132
+      MiniSprites_Buttons_9: 8957992014498092639
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
