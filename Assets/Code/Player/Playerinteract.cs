@@ -39,6 +39,11 @@ public class Playerinteract : MonoBehaviour
     [SerializeField, Range(0f, 1f)]
     private float volumenRecoleccion = 1f;
 
+    [Header("Sonido al perder ajolotes (Hikari y cuadros)")]
+    [SerializeField] private AudioClip sonidoPerdidaAjolotes;
+    [SerializeField, Range(0f, 1f)] private float volumenPerdidaAjolotes = 1f;
+    private AudioSource fuentePerdidaAjolotes;
+
     [SerializeField]
     private float[] pitchesRecoleccion =
     {
@@ -378,6 +383,7 @@ public class Playerinteract : MonoBehaviour
 
         ajolotesRecolectados = ajolotesRecolectadosObjetos.Count;
         ActualizarTextoAjolotes();
+        SonarPerdidaAjolotes();
     }
 
     private bool EstaTocandoAjolote(Collider2D ajolote)
@@ -391,6 +397,7 @@ public class Playerinteract : MonoBehaviour
 
     private void PerderAjolotes()
     {
+        bool teniaAjolotes = ajolotesRecolectadosObjetos.Count > 0;
         fila.Limpiar();
 
         foreach (GameObject ajolote in ajolotesRecolectadosObjetos)
@@ -403,6 +410,9 @@ public class Playerinteract : MonoBehaviour
         ajolotesRecolectados = 0;
 
         ActualizarTextoAjolotes();
+
+        if (teniaAjolotes)
+            SonarPerdidaAjolotes();
     }
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -515,6 +525,21 @@ public class Playerinteract : MonoBehaviour
     }
 
 
+
+    private void SonarPerdidaAjolotes()
+    {
+        if (sonidoPerdidaAjolotes == null)
+            return;
+
+        if (fuentePerdidaAjolotes == null)
+        {
+            fuentePerdidaAjolotes = gameObject.AddComponent<AudioSource>();
+            fuentePerdidaAjolotes.playOnAwake = false;
+            fuentePerdidaAjolotes.spatialBlend = 0f;
+        }
+
+        fuentePerdidaAjolotes.PlayOneShot(sonidoPerdidaAjolotes, volumenPerdidaAjolotes);
+    }
 
     private void SonarAlmacen(AudioClip clip)
     {

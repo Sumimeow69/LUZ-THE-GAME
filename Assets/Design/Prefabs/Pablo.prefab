@@ -294,6 +294,8 @@ MonoBehaviour:
   fuenteRecoleccion: {fileID: 0}
   sonidoRecoleccion: {fileID: 8300000, guid: 766b29aa41a01bc44bbfdcf4de10bde6, type: 3}
   volumenRecoleccion: 1
+  sonidoPerdidaAjolotes: {fileID: 8300000, guid: 855a2c2047fe10446b1b2964a6d267e1, type: 3}
+  volumenPerdidaAjolotes: 1
   pitchesRecoleccion:
   - 1
   - 1.1
