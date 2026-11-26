@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Design/Scenes/ATICO/ATICO NIVEL.unity
     guid: e113452160adc6946a318261261bd701
   - enabled: 1
-    path: Assets/Design/Scenes/Pg Casa/ikerproyectada.unity
+    path: Assets/Design/Scenes/CASA/ikerproyectada.unity
     guid: 6c37908a21a7201488119a8c6fcb25fe
   - enabled: 1
     path: Assets/Design/Scenes/DERROTA/DERROTA SCENE.unity
