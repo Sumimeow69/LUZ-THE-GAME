@@ -6,13 +6,15 @@ public class FilaAjolotes : MonoBehaviour
     [SerializeField] private GameObject prefabVisual;
     [SerializeField, Min(0.1f)] private float separacion = 0.85f;
 
-    private readonly List<Transform> seguidores = new();
+    private readonly List<AjoloteEnFila> seguidores = new();
     private readonly List<Vector3> recorrido = new();
 
     private float longitudRecorrido;
+    private Playerinteract jugador;
 
     private void Awake()
     {
+        jugador = GetComponent<Playerinteract>();
         recorrido.Add(transform.position);
     }
 
@@ -45,7 +47,7 @@ public class FilaAjolotes : MonoBehaviour
 
         for (int i = 0; i < seguidores.Count; i++)
         {
-            seguidores[i].position =
+            seguidores[i].transform.position =
                 PosicionEnRecorrido((i + 1) * separacion);
         }
     }
@@ -71,19 +73,37 @@ public class FilaAjolotes : MonoBehaviour
         return recorrido[recorrido.Count - 1];
     }
 
-    public void Agregar()
+    public void Agregar(GameObject origen)
     {
         GameObject compañero = Instantiate(
             prefabVisual,
             PosicionEnRecorrido((seguidores.Count + 1) * separacion),
             prefabVisual.transform.rotation);
 
-        seguidores.Add(compañero.transform);
+        AjoloteEnFila ajolote = compañero.GetComponent<AjoloteEnFila>();
+        ajolote.Inicializar(jugador, origen);
+        seguidores.Add(ajolote);
+    }
+
+    public void Quitar(GameObject origen)
+    {
+        for (int i = 0; i < seguidores.Count; i++)
+        {
+            AjoloteEnFila compañero = seguidores[i];
+
+            if (compañero.Origen != origen)
+                continue;
+
+            seguidores.RemoveAt(i);
+            compañero.gameObject.SetActive(false);
+            Destroy(compañero.gameObject);
+            return;
+        }
     }
 
     public void Limpiar()
     {
-        foreach (Transform compañero in seguidores)
+        foreach (AjoloteEnFila compañero in seguidores)
         {
             if (compañero == null)
                 continue;

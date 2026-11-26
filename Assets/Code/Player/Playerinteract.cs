@@ -52,6 +52,7 @@ public class Playerinteract : MonoBehaviour
 
     private int ajolotesRecolectados = 0;
     private List<GameObject> ajolotesRecolectadosObjetos = new List<GameObject>();
+    private readonly HashSet<GameObject> ajolotesEsperandoSalida = new();
 
 
     private cuadroscript cuadroActual;
@@ -331,7 +332,9 @@ public class Playerinteract : MonoBehaviour
             }
         }
 
-        if (other.CompareTag("Ajolote"))
+        if (other.CompareTag("Ajolote") &&
+            !ajolotesEsperandoSalida.Contains(other.gameObject) &&
+            !ajolotesRecolectadosObjetos.Contains(other.gameObject))
         {
             ajolotesRecolectados++;
 
@@ -344,8 +347,7 @@ public class Playerinteract : MonoBehaviour
             other.gameObject.SetActive(false);
 
 
-            ajolotesRecolectadosObjetos.Add(other.gameObject);
-            fila.Agregar();
+            fila.Agregar(other.gameObject);
         }
     }
 
@@ -357,6 +359,34 @@ public class Playerinteract : MonoBehaviour
 
         spriteCofre.color = Color.white;
         efectoCofre = null;
+    }
+
+    public void PerderAjolote(GameObject ajolote)
+    {
+        if (completandoNivel || ajolote == null ||
+            !ajolotesRecolectadosObjetos.Remove(ajolote))
+        {
+            return;
+        }
+
+        fila.Quitar(ajolote);
+        ajolote.SetActive(true);
+
+        // Si reaparece debajo de Jesus, esperar a que salga antes de recogerlo otra vez.
+        if (EstaTocandoAjolote(ajolote.GetComponent<Collider2D>()))
+            ajolotesEsperandoSalida.Add(ajolote);
+
+        ajolotesRecolectados = ajolotesRecolectadosObjetos.Count;
+        ActualizarTextoAjolotes();
+    }
+
+    private bool EstaTocandoAjolote(Collider2D ajolote)
+    {
+        if (playerCollider == null || ajolote == null)
+            return false;
+
+        ColliderDistance2D distancia = Physics2D.Distance(playerCollider, ajolote);
+        return distancia.isValid && distancia.distance <= 0f;
     }
 
     private void PerderAjolotes()
@@ -378,6 +408,10 @@ public class Playerinteract : MonoBehaviour
     {
         if (completandoNivel)
             return;
+
+        // Ignorar salidas antiguas de cuando el original se desactivo al recogerlo.
+        if (other.CompareTag("Ajolote") && !EstaTocandoAjolote(other))
+            ajolotesEsperandoSalida.Remove(other.gameObject);
 
         if (other.CompareTag("Almacen"))
         {
